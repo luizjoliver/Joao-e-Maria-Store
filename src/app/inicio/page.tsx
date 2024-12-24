@@ -1,5 +1,5 @@
 import Card from "@/components/Card";
-import Menu from "@/components/Menu";
+import NavBar from "@/components/NavBar";
 import { CategoriesCards, CategoriesCards2 } from "@/contants";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 export default function Home() {
   return (
     <div className="h-full w-full">
-      <Menu/>
+      <NavBar/>
       <section className="w-full h-[calc(100%-7rem)] flex flex-col items-center justify-center ">
           <div className=" h-[80%] w-[65%] relative ">
             <Image src={"/banner.jpg"} alt="" fill  />
