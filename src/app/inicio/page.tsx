@@ -35,7 +35,7 @@ export default function Home() {
 
                 <div className="w-full h-[50%] flex gap-4 wrap ">
                   {CategoriesCards2.map((category) =>(
-                    <Card key={category.categoryName} pictureUrl={category.pictureUrl} categoryName={category.categoryName}/>
+                    <Card key={category!.categoryName} pictureUrl={category!.pictureUrl} categoryName={category!.categoryName}/>
                   ))}
                 </div>
 

@@ -3,12 +3,13 @@
 import { categoriesMenu } from "@/contants";
 import Link from "next/link";
 import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function NavBar() {
   const [activeMenu, setActiveMenu] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('');
 
-  function handleEnterMenu(title) {
+  function handleEnterMenu(title:string) {
     setCurrentCategory(title);
     setActiveMenu(true);
   }
@@ -24,7 +25,7 @@ export default function NavBar() {
         {/* Top Navbar */}
         <div className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
           <div className="w-[12%] flex items-center justify-center">
-            <span className="text-5xl text-white font-thin tracking-widest">J M</span>
+            <Link href={"/inicio"}><span className="text-5xl text-white font-thin tracking-widest">J M</span></Link>
           </div>
 
           <nav className="w-full flex items-center justify-start">
@@ -49,6 +50,11 @@ export default function NavBar() {
               ))}
             </ul>
           </nav>
+          <div className=" w-[10%] h-full flex items-center justify-center">
+            <Link href={"/Carrinho"}>
+              <FaShoppingCart size={"25%"}  color="white"/>
+            </Link>
+          </div>
         </div>
 
         {/* Dropdown Menu */}
@@ -68,17 +74,18 @@ export default function NavBar() {
                       >
                         {category.subcategories.map((subcategory) => (
                           <div key={subcategory.subtitle} className="">
-                            <h3 className="font-bold text-xl text-white underline underline-offset-4 mb-2">
+                            <h3 className="font-bold text-xl text-white   mb-2">
                               {subcategory.subtitle}
                             </h3>
                             <ul className="space-y-1">
                               {subcategory.items.map((item) => (
-                                <li
-                                  key={item}
-                                  className="text-white opacity-90 hover:opacity-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
-                                >
-                                  {item}
-                                </li>
+                                <Link href={`${item.link}`} key={item.name}>
+                                  <li
+                                    className="text-gray-100 opacity-80 hover:opacity-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+                                  >
+                                    {item.name}
+                                  </li>
+                                </Link>
                               ))}
                             </ul>
                           </div>

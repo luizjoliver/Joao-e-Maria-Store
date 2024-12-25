@@ -45,19 +45,35 @@ export const CategoriesCards = [
       subcategories: [
         {
           subtitle: "Destaque",
-          items: ["Nike", "Botafogo", "Adidas"]
+          items: [
+            { name: "Nike", link: "/destaques/nike" },
+            { name: "Botafogo", link: "/destaques/botafogo" },
+            { name: "Adidas", link: "/destaques/adidas" }
+          ]
         },
         {
           subtitle: "Feminino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/lancamentos/feminino/calcados" },
+            { name: "Roupas", link: "/lancamentos/feminino/roupas" },
+            { name: "Acessórios", link: "/lancamentos/feminino/acessorios" }
+          ]
         },
         {
           subtitle: "Masculino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/lancamentos/masculino/calcados" },
+            { name: "Roupas", link: "/lancamentos/masculino/roupas" },
+            { name: "Acessórios", link: "/lancamentos/masculino/acessorios" }
+          ]
         },
         {
           subtitle: "Infantil",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/lancamentos/infantil/calcados" },
+            { name: "Roupas", link: "/lancamentos/infantil/roupas" },
+            { name: "Acessórios", link: "/lancamentos/infantil/acessorios" }
+          ]
         }
       ]
     },
@@ -66,19 +82,35 @@ export const CategoriesCards = [
       subcategories: [
         {
           subtitle: "Destaque",
-          items: ["Vestuário","Natal", "Ano novo" ]
+          items: [
+            { name: "Vestuário", link: "/ofertas/destaque/vestuario" },
+            { name: "Natal", link: "/ofertas/destaque/natal" },
+            { name: "Ano novo", link: "/ofertas/destaque/anonovo" }
+          ]
         },
         {
           subtitle: "Feminino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/ofertas/feminino/calcados" },
+            { name: "Roupas", link: "/ofertas/feminino/roupas" },
+            { name: "Acessórios", link: "/ofertas/feminino/acessorios" }
+          ]
         },
         {
           subtitle: "Masculino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/ofertas/masculino/calcados" },
+            { name: "Roupas", link: "/ofertas/masculino/roupas" },
+            { name: "Acessórios", link: "/ofertas/masculino/acessorios" }
+          ]
         },
         {
           subtitle: "Infantil",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/ofertas/infantil/calcados" },
+            { name: "Roupas", link: "/ofertas/infantil/roupas" },
+            { name: "Acessórios", link: "/ofertas/infantil/acessorios" }
+          ]
         }
       ]
     },
@@ -87,19 +119,35 @@ export const CategoriesCards = [
       subcategories: [
         {
           subtitle: "Maquiagem",
-          items: ["Boticário", "Boca Rosa", "Gkay"]
+          items: [
+            { name: "Boticário", link: "/feminino/maquiagem/boticario" },
+            { name: "Boca Rosa", link: "/feminino/maquiagem/bocarosa" },
+            { name: "Gkay", link: "/feminino/maquiagem/gkay" }
+          ]
         },
         {
           subtitle: "Roupas",
-          items: ["tops", "shorts", "leggings"]
+          items: [
+            { name: "Tops", link: "/feminino/roupas/tops" },
+            { name: "Shorts", link: "/feminino/roupas/shorts" },
+            { name: "Leggings", link: "/feminino/roupas/leggings" }
+          ]
         },
         {
           subtitle: "Calçado",
-          items: ["Corrida", "Academia", "Chuteira"]
+          items: [
+            { name: "Corrida", link: "/feminino/calcado/corrida" },
+            { name: "Academia", link: "/feminino/calcado/academia" },
+            { name: "Chuteira", link: "/feminino/calcado/chuteira" }
+          ]
         },
         {
           subtitle: "Acessórios",
-          items: ["Relogios", "Bonés", "Bolsas"]
+          items: [
+            { name: "Relógios", link: "/feminino/acessorios/relogios" },
+            { name: "Bonés", link: "/feminino/acessorios/bones" },
+            { name: "Bolsas", link: "/feminino/acessorios/bolsas" }
+          ]
         }
       ]
     },
@@ -108,19 +156,35 @@ export const CategoriesCards = [
       subcategories: [
         {
           subtitle: "Camisa de time",
-          items: ["Futebol", "Basquete", "Vôlei"]
+          items: [
+            { name: "Futebol", link: "/masculino/camisa/futebol" },
+            { name: "Basquete", link: "/masculino/camisa/basquete" },
+            { name: "Vôlei", link: "/masculino/camisa/volei" }
+          ]
         },
         {
           subtitle: "Feminino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/masculino/feminino/calcados" },
+            { name: "Roupas", link: "/masculino/feminino/roupas" },
+            { name: "Acessórios", link: "/masculino/feminino/acessorios" }
+          ]
         },
         {
           subtitle: "Masculino",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/masculino/masculino/calcados" },
+            { name: "Roupas", link: "/masculino/masculino/roupas" },
+            { name: "Acessórios", link: "/masculino/masculino/acessorios" }
+          ]
         },
         {
           subtitle: "Infantil",
-          items: ["Calçados", "Roupas", "Acessórios"]
+          items: [
+            { name: "Calçados", link: "/masculino/infantil/calcados" },
+            { name: "Roupas", link: "/masculino/infantil/roupas" },
+            { name: "Acessórios", link: "/masculino/infantil/acessorios" }
+          ]
         }
       ]
     }
