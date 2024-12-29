@@ -8,8 +8,7 @@ export default function HomeLayout({
     children: React.ReactNode
   }) {
     return (
-      <html lang="pt-br">
-        <body>
+      <>
          
           {children}
           <div className="flex gap-6   fixed bottom-0 right-0 p-6">
@@ -20,7 +19,6 @@ export default function HomeLayout({
                      <SiWhatsapp size={30} color="#25D366" />
           </Link>
         </div>
-        </body>
-      </html>
+        </>
     )
   }

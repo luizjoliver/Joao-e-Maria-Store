@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="w-full h-[60%] fixed z-10 flex flex-col">
+      <div className=" w-full h-[60%] fixed z-10 flex flex-col">
         {/* Top Navbar */}
         <div className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
           <div className="w-[12%] flex items-center justify-center">

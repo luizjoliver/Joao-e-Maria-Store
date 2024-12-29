@@ -1,43 +1,43 @@
 export const CategoriesCards = [
     {
+      id:1,
       categoryName:"Casual",
       pictureUrl:"/casual.png"
     }
-    ,{
+    ,{id:2,
       categoryName:"Corrida",
       pictureUrl:"/corrida.png"
-    },{
+    },{id:3,
       categoryName:"Futebol",
       pictureUrl:"/futebol.png"
     },
-    {
+    {id:4,
       categoryName:"Treino",
       pictureUrl:"/treino1.png"
-    }
-  ]
-  
-  export const CategoriesCards2 = [
-    {
+    },
+    {id:5,
       categoryName:"NikeDunk",
       pictureUrl:"/nikedunk.png"
     }
     ,
-    {
+    {id:6,
       categoryName:"nikekillshot",
       pictureUrl:"/nikekillshot.png"
     },
-    ,{
+    ,{id:7,
       categoryName:"nikev2k",
       pictureUrl:"/nikev2k.png"
     }
     
     ,
     
-    {
+    {id:8,
       categoryName:"Casual",
       pictureUrl:"/casual.png"
     }
   ]
+  
+  
 
   export const categoriesMenu = [
     {
