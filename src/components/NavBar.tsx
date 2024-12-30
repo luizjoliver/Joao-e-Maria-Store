@@ -21,11 +21,11 @@ export default function NavBar() {
 
   return (
     <>
-      <div className=" w-full h-[60%] fixed z-10 flex flex-col">
-        {/* Top Navbar */}
+      <div className=" hidden sm:flex w-full h-[60%] fixed z-10  flex-col">
+      
         <div className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
           <div className="w-[12%] flex items-center justify-center">
-            <Link href={"/inicio"}><span className="text-5xl text-white font-thin tracking-widest">J M</span></Link>
+            <Link href={"/inicio"}><span className="text-3xl lg:text-5xl text-white font-thin tracking-widest">J M</span></Link>
           </div>
 
           <nav className="w-full flex items-center justify-start">
@@ -34,7 +34,7 @@ export default function NavBar() {
                 <li
                   key={category.title}
                   onMouseEnter={() => handleEnterMenu(category.title)}
-                  className="transition duration-300 ease-in-out hover:scale-105 hover:opacity-90"
+                  className="text-sm lg:text-base transition duration-300 ease-in-out hover:scale-105 hover:opacity-90"
                 >
                   <Link
                     href={""}

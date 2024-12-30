@@ -1,6 +1,6 @@
 import Card from "@/components/Card";
 import NavBar from "@/components/NavBar";
-import { CategoriesCards} from "@/contants";
+import { CategoriesCards } from "@/contants";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -12,25 +12,28 @@ export default function Home() {
   return (
     <div className="h-full w-full">
       <NavBar />
-      <section className="hidden sm:flex sm:flex-col w-full h-[calc(100%-7rem)]  items-center justify-center  ">
-        <div className=" h-full w-full md:h-[80%] md:w-[85%] lg:w-[70%] relative   ">
-          <Image src={"/banner.jpg"} alt="" fill />
+      <section className="  h-[calc(100%-15rem)]  md:h-[calc(100%-7rem)] flex flex-col w-full md:gap-10  items-center justify-center">
+        <div className="  h-[40%] w-full sm:h-full md:h-[80%]  md:w-[70%] lg:w-[70%] relative ">
+          <Image src={"/banner.jpg"} className="bg-bottom" alt="" fill quality={100}/>
 
         </div>
-        <div className="h-[20%] w-[85%] flex items-center justify-center ">
-          <Link href={"/ofertas"} className="p-4 bg-black rounded-full text-white">Ver ofertas</Link>
+
+        <div className="h-[30%] md:h-[20%] w-full  flex flex-col items-center justify-center   ">
+          <Link href={"/ofertas"} className="p-4 bg-black rounded-full text-white ">Ver ofertas</Link>
+
         </div>
+
       </section>
-
-      <section className="w-full h-[600vh] md:h-[250vh] lg:h-[90%] flex items-start justify-center pb-24">
-        <div className=" h-[70%] w-[45%] md:h-full md:w-[85%] lg:w-[70%] flex flex-col gap-10 ">
-        <p className="text-4xl">Compre por Categoria</p>
-
-          <div className="w-full h-full  grid  gap-4 lg:grid-cols-4  lg:grid-rows-2
-          md:grid-rows-4 md:grid-cols-2 bg-">
-            {CategoriesCards.map((category) =>(
-                    <Card key={category!.id} pictureUrl={category!.pictureUrl} categoryName={category!.categoryName}/>
-                  ))}
+      <section className="  w-full h-[220vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24">
+        <p className=" text-xl sm:text-4xl mb-10 lg:mb-20">Compre por categoria</p>
+        <div className="  h-[95%] w-[45%] md:h-full md:w-[70%] lg:w-[55%] flex flex-col gap-10 ">
+          <div className="  w-full h-full  grid  gap-4 lg:grid-cols-4  lg:grid-rows-2
+    md:grid-rows-4 md:grid-cols-2 ">
+            {CategoriesCards.map((category) => (
+              <Link href={`${category?.categoryName}`} key={category?.id} className="hover:scale-105 w-full h-full ">
+                <Card  pictureUrl={category!.pictureUrl} />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ export default function HomeLayout({
       <>
          
           {children}
-          <div className="flex gap-6   fixed bottom-0 right-0 p-6">
+          <div className="flex flex-col sm:flex-row gap-6   fixed bottom-0 right-0 p-6">
           <Link href={""} target="_blank" className="">
                      <Image alt="instagram logo" src={"instagram.svg"} width={30} height={30} quality={75}  />
           </Link>
