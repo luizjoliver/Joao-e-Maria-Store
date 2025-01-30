@@ -1,6 +1,5 @@
 import Card from "@/components/Card";
-import NavBar from "@/components/NavBar";
-import { CategoriesCards } from "@/contants";
+import { CategoriesCards } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -10,10 +9,10 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-full w-full">
-      <NavBar />
-      <section className="  h-[calc(100%-15rem)]  md:h-[calc(100%-7rem)] flex flex-col w-full md:gap-10  items-center justify-center">
-        <div className="  h-[40%] w-full sm:h-full md:h-[80%]  md:w-[70%] lg:w-[70%] relative ">
+    <div className="h-full w-full ">
+    
+      <section className="  h-[calc(100%-15rem)]  md:h-[calc(100%-6rem)] flex flex-col w-full md:gap-10  items-center justify-center ">
+        <div className="  h-[40%] w-full sm:h-full md:h-[70%]  md:w-[85%] lg:w-[70%] relative  ">
           <Image src={"/banner.jpg"} className="bg-bottom" alt="" fill quality={100}/>
 
         </div>
@@ -24,13 +23,14 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="  w-full h-[220vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24">
+
+      <section className="  w-full h-[220vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24 ">
         <p className=" text-xl sm:text-4xl mb-10 lg:mb-20">Compre por categoria</p>
-        <div className="  h-[95%] w-[45%] md:h-full md:w-[70%] lg:w-[55%] flex flex-col gap-10 ">
+        <div className="  h-[95%] w-[40%] md:h-full md:w-[70%]  lg:w-[60%] flex flex-col gap-10 ">
           <div className="  w-full h-full  grid  gap-4 lg:grid-cols-4  lg:grid-rows-2
     md:grid-rows-4 md:grid-cols-2 ">
             {CategoriesCards.map((category) => (
-              <Link href={`${category?.categoryName}`} key={category?.id} className="hover:scale-105 w-full h-full ">
+              <Link href={`${category?.categoryName}`} key={category?.id} className="hover:scale-105 w-full h-full">
                 <Card  pictureUrl={category!.pictureUrl} />
               </Link>
             ))}

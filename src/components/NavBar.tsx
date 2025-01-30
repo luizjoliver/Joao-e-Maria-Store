@@ -1,6 +1,6 @@
 "use client";
 
-import { categoriesMenu } from "@/contants";
+import { categoriesMenu } from "@/constants";
 import Link from "next/link";
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";

@@ -40,10 +40,10 @@ export const CategoriesCards = [
   
 
   export const categoriesMenu = [
-    {
+    {  
       title: "Lançamentos",
       subcategories: [
-        {
+        { id:1,
           subtitle: "Destaque",
           items: [
             { name: "Nike", link: "/destaques/nike" },
@@ -52,6 +52,7 @@ export const CategoriesCards = [
           ]
         },
         {
+          id:2,
           subtitle: "Feminino",
           items: [
             { name: "Calçados", link: "/lancamentos/feminino/calcados" },
@@ -59,7 +60,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/lancamentos/feminino/acessorios" }
           ]
         },
-        {
+        { id:3,
           subtitle: "Masculino",
           items: [
             { name: "Calçados", link: "/lancamentos/masculino/calcados" },
@@ -67,7 +68,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/lancamentos/masculino/acessorios" }
           ]
         },
-        {
+        { id:4,
           subtitle: "Infantil",
           items: [
             { name: "Calçados", link: "/lancamentos/infantil/calcados" },
@@ -77,10 +78,10 @@ export const CategoriesCards = [
         }
       ]
     },
-    {
+    { 
       title: "Ofertas",
       subcategories: [
-        {
+        { id:5,
           subtitle: "Destaque",
           items: [
             { name: "Vestuário", link: "/ofertas/destaque/vestuario" },
@@ -88,7 +89,7 @@ export const CategoriesCards = [
             { name: "Ano novo", link: "/ofertas/destaque/anonovo" }
           ]
         },
-        {
+        { id:6,
           subtitle: "Feminino",
           items: [
             { name: "Calçados", link: "/ofertas/feminino/calcados" },
@@ -96,7 +97,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/ofertas/feminino/acessorios" }
           ]
         },
-        {
+        { id:7,
           subtitle: "Masculino",
           items: [
             { name: "Calçados", link: "/ofertas/masculino/calcados" },
@@ -104,7 +105,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/ofertas/masculino/acessorios" }
           ]
         },
-        {
+        { id:8,
           subtitle: "Infantil",
           items: [
             { name: "Calçados", link: "/ofertas/infantil/calcados" },
@@ -114,10 +115,10 @@ export const CategoriesCards = [
         }
       ]
     },
-    {
+    { 
       title: "Feminino",
       subcategories: [
-        {
+        {  id:9,
           subtitle: "Maquiagem",
           items: [
             { name: "Boticário", link: "/feminino/maquiagem/boticario" },
@@ -125,7 +126,7 @@ export const CategoriesCards = [
             { name: "Gkay", link: "/feminino/maquiagem/gkay" }
           ]
         },
-        {
+        { id:10,
           subtitle: "Roupas",
           items: [
             { name: "Tops", link: "/feminino/roupas/tops" },
@@ -133,7 +134,7 @@ export const CategoriesCards = [
             { name: "Leggings", link: "/feminino/roupas/leggings" }
           ]
         },
-        {
+        { id:11,
           subtitle: "Calçado",
           items: [
             { name: "Corrida", link: "/feminino/calcado/corrida" },
@@ -141,7 +142,7 @@ export const CategoriesCards = [
             { name: "Chuteira", link: "/feminino/calcado/chuteira" }
           ]
         },
-        {
+        { id:12,
           subtitle: "Acessórios",
           items: [
             { name: "Relógios", link: "/feminino/acessorios/relogios" },
@@ -151,10 +152,11 @@ export const CategoriesCards = [
         }
       ]
     },
-    {
+    { 
       title: "Masculino",
       subcategories: [
-        {
+        { id:13
+        ,
           subtitle: "Camisa de time",
           items: [
             { name: "Futebol", link: "/masculino/camisa/futebol" },
@@ -162,7 +164,7 @@ export const CategoriesCards = [
             { name: "Vôlei", link: "/masculino/camisa/volei" }
           ]
         },
-        {
+        { id:14,
           subtitle: "Feminino",
           items: [
             { name: "Calçados", link: "/masculino/feminino/calcados" },
@@ -170,7 +172,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/masculino/feminino/acessorios" }
           ]
         },
-        {
+        { id:15,
           subtitle: "Masculino",
           items: [
             { name: "Calçados", link: "/masculino/masculino/calcados" },
@@ -178,7 +180,7 @@ export const CategoriesCards = [
             { name: "Acessórios", link: "/masculino/masculino/acessorios" }
           ]
         },
-        {
+        { id:16,
           subtitle: "Infantil",
           items: [
             { name: "Calçados", link: "/masculino/infantil/calcados" },
