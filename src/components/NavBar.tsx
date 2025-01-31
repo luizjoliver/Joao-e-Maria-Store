@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className=" hidden sm:flex w-full h-[60%] fixed z-10  flex-col "
+      <div className={`hidden sm:flex w-full  ${activeMenu ?'h-[60%]' :'h-28'} fixed z-10  flex-col`}
       onMouseLeave={handleLeaveMenu}>
       
         <div 

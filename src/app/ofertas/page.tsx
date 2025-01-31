@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
-import ProductCard from '@/components/ProductCard'
+import PaginationProducts from '@/components/PaginationProducts'
+import ProductCard from '@/components/ProductsCard'
 import { Products} from '@/constants'
 import React from 'react'
 
@@ -12,19 +13,21 @@ export default function OfertasPage() {
           <div className='bg-white w-[20%] h-full'>
 
           </div>
-          <div className='w-full h-full  flex flex-col items-center justify-center '>
-            <h2 className=' self-start text-2xl'>Ofertas JM</h2>
+          <div className='  w-full h-full  flex flex-col items-center justify-center '>
+            <h2 className=' self-start text-2xl'>Ofertas - JM</h2>
 
             <div className="  w-[80%] h-full grid  grid-cols-2 lg:grid-cols-3 lg:grid-rows-2  gap-4 p-4">
 
-            {Products.map((product) => <ProductCard key={product.id} img={product.img} name={product.name} price={product.price} category={product.category}/>)}
+            {Products.map((product) => (
+              
+               <ProductCard  key={product.id} product={product} />
+              
+          ))}
 
 
             </div>
 
-            <div className='bg-white w-full h-9'>
-
-            </div>
+            <PaginationProducts />
 
           </div>
         </div>

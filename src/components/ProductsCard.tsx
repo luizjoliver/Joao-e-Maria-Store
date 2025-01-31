@@ -1,17 +1,25 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 export type ProductTypeProps = {
-    name:string;
-    price:number;
-    img:string;
-    category:string;
-    colors?:string[];
+    id: number;
+    name: string;
+    price: number;
+    img: string;
+    category: string;
+    colors?: string[];
 }
 
-export default function ProductCard({name,price,category,img} :ProductTypeProps) {
+type ProductCardProps = {
+    product: ProductTypeProps;
+}
+export default function ProductCard( {product} :ProductCardProps) {
+    
+    const { id, name, price, category, img } = product;
+
   return (
-     <div className=" bg-white flex flex-col  items-center justify-center gap-4 pb-2">
+     <Link className=" bg-white flex flex-col  items-center justify-center gap-4 pb-2 hover:scale-105 hover:cursor-pointer" href={`produto/${id}`}>
                     <div className=' aspect-auto relative w-full h-full'>
                        <Image  src={ img } 
                        fill
@@ -44,6 +52,6 @@ export default function ProductCard({name,price,category,img} :ProductTypeProps)
                               </div>
                           </div>
                    
-                  </div>
+                  </Link>
   )
 }
