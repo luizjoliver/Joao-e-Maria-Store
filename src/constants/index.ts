@@ -1,3 +1,6 @@
+import {  ProductTypeProps } from "@/components/ProductCard";
+
+
 export const CategoriesCards = [
     {
       id:1,
@@ -191,3 +194,52 @@ export const CategoriesCards = [
       ]
     }
   ];
+  export type ProductType = ProductTypeProps & { id: number };
+
+  export const Products : ProductType[] = [
+      {
+        id:1,
+        name:'Adidas runner',
+        category:'Treino',
+        price:299.90,
+        img:'/adidas.png'
+      },
+      {
+        id:2,
+        name:'Sapa tênis kesis',
+        category:'Casual',
+        price:189.90,
+        img:'/sapatenis.png'
+      },
+      {
+        id:3,
+        name:'Nike MD Runner',
+        category:'Treino',
+        price:590.99,
+        img:'/nike1.png'
+      },
+      {
+        id:4,
+        name:'Sapa tênis casual',
+        category:'Casual',
+        price:180.99,
+        img:'/sapatenis2.png'
+      },
+      {
+        id:5,
+        name:'Nike Air Max',
+        category:'Casual',
+        price:590.99,
+        img:'/airmax.png'
+      },
+      {
+        id:6,
+        name:'Nike Viper V2',
+        category:'Casual',
+        price:690.99,
+        img:'/nike2.png'
+      }
+     
+
+
+  ]

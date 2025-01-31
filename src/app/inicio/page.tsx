@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import PictureSection from "@/components/PictureSection";
 import { CategoriesCards } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,13 +7,14 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 
 
+
 export default function Home() {
   return (
     <div className="h-full w-full ">
-    
+
       <section className="  h-[calc(100%-15rem)]  md:h-[calc(100%-6rem)] flex flex-col w-full md:gap-10  items-center justify-center ">
         <div className="  h-[40%] w-full sm:h-full md:h-[70%]  md:w-[85%] lg:w-[70%] relative  ">
-          <Image src={"/banner.jpg"} className="bg-bottom" alt="" fill quality={100}/>
+          <Image src={"/banner.jpg"} className="bg-bottom" alt="" fill quality={100} />
 
         </div>
 
@@ -31,7 +32,7 @@ export default function Home() {
     md:grid-rows-4 md:grid-cols-2 ">
             {CategoriesCards.map((category) => (
               <Link href={`${category?.categoryName}`} key={category?.id} className="hover:scale-105 w-full h-full">
-                <Card  pictureUrl={category!.pictureUrl} />
+                <PictureSection pictureUrl={category!.pictureUrl} />
               </Link>
             ))}
           </div>
@@ -67,10 +68,10 @@ export default function Home() {
           <div className="flex flex-col items-center gap-2 text-center">
             <h2 className="text-lg font-semibold">Formas de Pagamento</h2>
             <div className="flex space-x-4">
-              <img src="/icons/visa.png" alt="Visa" className="w-10 h-10" />
+              {/* <img src="/icons/visa.png" alt="Visa" className="w-10 h-10" />
               <img src="/icons/mastercard.png" alt="Mastercard" className="w-10 h-10" />
               <img src="/icons/pix.png" alt="Pix" className="w-10 h-10" />
-              <img src="/icons/amex.png" alt="Amex" className="w-10 h-10" />
+              <img src="/icons/amex.png" alt="Amex" className="w-10 h-10" /> */}
             </div>
           </div>
         </div>

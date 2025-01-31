@@ -21,9 +21,12 @@ export default function NavBar() {
 
   return (
     <>
-      <div className=" hidden sm:flex w-full h-[60%] fixed z-10  flex-col">
+      <div className=" hidden sm:flex w-full h-[60%] fixed z-10  flex-col "
+      onMouseLeave={handleLeaveMenu}>
       
-        <div className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
+        <div 
+       
+        className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
           <div className="w-[12%] flex items-center justify-center">
             <Link href={"/inicio"}><span className="text-3xl lg:text-5xl text-white font-thin tracking-widest">J M</span></Link>
           </div>

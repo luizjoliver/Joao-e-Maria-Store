@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 
-export default function Card({pictureUrl}:{pictureUrl:string}) {
+export default function PictureSection({pictureUrl}:{pictureUrl:string}) {
   return (
     <div className="w-full  h-full relative">
              <Image src={pictureUrl} alt="foto da categoria"  fill/> 
