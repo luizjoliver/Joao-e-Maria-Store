@@ -1,4 +1,3 @@
-
 "use client"
 
 
@@ -17,7 +16,7 @@ export default function CarouselSection() {
         <div className="w-full h-full flex items-center justify-center">
           {/* Carrosell 2 linhas */}
 
-          <div  className="   w-[70%] h-full flex flex-col gap-8 ">
+          <div  className="   w-full h-[80%] lg:w-[90%] xl:w-[70%]  flex flex-col gap-8  ">
 
               {/* Carrosell 1 */}
               <h2 className='text-center'>Mais vendidos </h2>

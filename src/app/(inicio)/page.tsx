@@ -23,16 +23,16 @@ export default function Home() {
           <Link href={"/ofertas"} className="p-4 bg-black rounded-full text-white ">Ver ofertas</Link>
 
         </div>
-
+       
       </section>
 
-      <section className="  w-full h-[220vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24 ">
+      <section className="  w-full h-[240vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24 ">
         <p className=" text-2xl sm:text-4xl   mb-10  lg:mb-20">Compre por categoria</p>
-        <div className="   h-full w-full sm:w-[40%] md:h-full md:w-[70%]  flex flex-col gap-10 ">
+        <div className="    h-full w-[35%] sm:w-[30%] md:w-[70%] md:h-full  flex flex-col gap-10 ">
           <div className="  w-full   h-full  grid  gap-4  lg:grid-cols-4  lg:grid-rows-2
-    md:grid-rows-4 md:grid-cols-2 ">
+    md:grid-rows-4 md:grid-cols-2  ">
             {CategoriesCards.map((category) => (
-              <Link href={`${category?.categoryName}`} key={category?.id} className=" flex items-center justify-center hover:scale-105 w-full h-full">
+              <Link href={`${category?.categoryName}`} key={category?.id} className=" flex items-center justify-center hover:scale-105 ">
                 <PictureSection pictureUrl={category!.pictureUrl} />
               </Link>
             ))}

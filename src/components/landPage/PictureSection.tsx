@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function PictureSection({pictureUrl}:{pictureUrl:string}) {
   return (
-    <div className=" w-full sm:w-[80%]  aspect-auto h-full relative ">
+    <div className=" h-full w-full aspect-auto  relative ">
              <Image src={pictureUrl} alt="foto da categoria"  fill
-             className="object-contain w-full"
+             className="w-full "
              /> 
     </div>
   )

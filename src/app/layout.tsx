@@ -30,6 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
           <NavBarComponent/>  
+          {/* <OrientationLock />
+         <OrientationWarning /> */}
         {children}
       </body>
     </html>
