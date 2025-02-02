@@ -40,7 +40,7 @@ export default function PhoneNavBar() {
         <nav className='w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex items-center justify-between px-5 fixed z-10  '>
 
           <div className="w-auto flex items-center justify-center ">
-            <Link href={"/inicio"}><h1 className="text-3xl  text-white font-thin  tracking-widest">J M</h1></Link>
+            <Link href={"/"}><h1 className="text-3xl  text-white font-thin  tracking-widest">J M</h1></Link>
           </div>
           <div className=''>
             <ul className='flex justify-center items-center gap-4'>

@@ -1,4 +1,5 @@
-import PictureSection from "@/components/PictureSection";
+import CarouselSection from "@/components/landPage/CarouselSection";
+import PictureSection from "@/components/landPage/PictureSection";
 import { CategoriesCards } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,18 +27,20 @@ export default function Home() {
       </section>
 
       <section className="  w-full h-[220vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24 ">
-        <p className=" text-xl sm:text-4xl mb-10 lg:mb-20">Compre por categoria</p>
-        <div className="  h-[95%] w-[40%] md:h-full md:w-[70%]  lg:w-[60%] flex flex-col gap-10 ">
-          <div className="  w-full h-full  grid  gap-4 lg:grid-cols-4  lg:grid-rows-2
+        <p className=" text-2xl sm:text-4xl   mb-10  lg:mb-20">Compre por categoria</p>
+        <div className="   h-full w-full sm:w-[40%] md:h-full md:w-[70%]  flex flex-col gap-10 ">
+          <div className="  w-full   h-full  grid  gap-4  lg:grid-cols-4  lg:grid-rows-2
     md:grid-rows-4 md:grid-cols-2 ">
             {CategoriesCards.map((category) => (
-              <Link href={`${category?.categoryName}`} key={category?.id} className="hover:scale-105 w-full h-full">
+              <Link href={`${category?.categoryName}`} key={category?.id} className=" flex items-center justify-center hover:scale-105 w-full h-full">
                 <PictureSection pictureUrl={category!.pictureUrl} />
               </Link>
             ))}
           </div>
         </div>
       </section>
+
+      <CarouselSection/>
 
       <footer className="bg-black w-full py-10 text-white">
 
