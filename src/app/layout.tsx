@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBarComponent from "@/components/landPage/NavBarComponent";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,8 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
           <NavBarComponent/>  
-          {/* <OrientationLock />
-         <OrientationWarning /> */}
+          
         {children}
       </body>
     </html>

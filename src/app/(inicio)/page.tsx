@@ -1,11 +1,11 @@
+"use client"
+
 import CarouselSection from "@/components/landPage/CarouselSection";
 import PictureSection from "@/components/landPage/PictureSection";
 import { CategoriesCards } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
-
 
 
 
@@ -23,16 +23,21 @@ export default function Home() {
           <Link href={"/ofertas"} className="p-4 bg-black rounded-full text-white ">Ver ofertas</Link>
 
         </div>
-       
+
       </section>
 
-      <section className="  w-full h-[240vh] md:h-[250vh] lg:h-[90%] flex flex-col items-center justify-around py-24 ">
-        <p className=" text-2xl sm:text-4xl   mb-10  lg:mb-20">Compre por categoria</p>
-        <div className="    h-full w-[35%] sm:w-[30%] md:w-[70%] md:h-full  flex flex-col gap-10 ">
-          <div className="  w-full   h-full  grid  gap-4  lg:grid-cols-4  lg:grid-rows-2
-    md:grid-rows-4 md:grid-cols-2  ">
+      <section className="w-full min-h-screen flex flex-col items-center justify-center py-20 bg-gray-50">
+        <p className="text-3xl sm:text-4xl font-bold mb-10 lg:mb-20 text-center">
+          Compre por categoria
+        </p>
+        <div className="w-full max-w-6xl px-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {CategoriesCards.map((category) => (
-              <Link href={`${category?.categoryName}`} key={category?.id} className=" flex items-center justify-center hover:scale-105 ">
+              <Link
+                href={`${category?.categoryName}`}
+                key={category?.id}
+                className="relative aspect-square overflow-hidden  hover:scale-105 transition-all duration-300"
+              >
                 <PictureSection pictureUrl={category!.pictureUrl} />
               </Link>
             ))}
@@ -40,7 +45,10 @@ export default function Home() {
         </div>
       </section>
 
-      <CarouselSection/>
+
+
+      <CarouselSection />
+
 
       <footer className="bg-black w-full py-10 text-white">
 

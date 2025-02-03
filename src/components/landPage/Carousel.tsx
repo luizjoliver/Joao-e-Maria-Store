@@ -8,11 +8,12 @@ import { ProductTypeProps } from '../ProductsCard'
 
 
 type CarouselProps = {
-  products: ProductTypeProps[];
+  products: ProductTypeProps[] 
+  homePage:boolean;
 };
 
 
-export default function Carousel({ products }: CarouselProps) {
+export default function Carousel({ products, homePage }: CarouselProps) {
 
 
   const [index, setIndex] = useState<number>(0)
@@ -32,24 +33,42 @@ export default function Carousel({ products }: CarouselProps) {
   useEffect(() => {
 
     function updateItemsPerPage() {
-   
-      switch(true){
-        case  window.innerWidth <= 425:
-            setItemsPerPage(1)
-            break  
-        case  window.innerWidth > 425 && window.innerWidth < 768:
-          setItemsPerPage(2)
-           break
-        case  window.innerWidth >=  768:
-            setItemsPerPage(4)  
-            break
-      }
+        
+        if(homePage){
+
+            switch(true){
+                case  window.innerWidth <= 425:
+                    setItemsPerPage(1)
+                    break  
+                case  window.innerWidth > 425 && window.innerWidth < 768:
+                  setItemsPerPage(2)
+                   break
+                case  window.innerWidth >=  768:
+                    setItemsPerPage(4)  
+                    break
+              }
+
+        }else{
+
+            switch(true){
+                case  window.innerWidth <= 425:
+                    setItemsPerPage(4)
+                    break  
+                case  window.innerWidth > 425 && window.innerWidth < 768:
+                  setItemsPerPage(2)
+                   break
+                case  window.innerWidth >=  768:
+                    setItemsPerPage(1)  
+                    break
+              }
+        }
+      
     }
 
     updateItemsPerPage();
  
 
-  }, []);
+  }, [homePage]);
 
 
   return (
@@ -57,12 +76,12 @@ export default function Carousel({ products }: CarouselProps) {
 
     <div className=' w-full h-full  flex  items-center gap-2 justify-center  '>
 
-      <div className=' h-16 w-[5%] flex items-center justify-center '>
+      <div className=' h-16 w-[15%] sm:w-[5%] flex items-center justify-center '>
         <IoIosArrowBack className='size-1/2 cursor-pointer  '
           onClick={handlePrevIndex} />
       </div>
 
-      <div className=' size-[90%]  flex  justify-center items-center overflow-hidden gap-4'>
+      <div className=' size-[70%] sm:size-[90%]  flex  justify-center items-center overflow-hidden gap-4'>
         {
           products.slice(index, index + itensPerPage).map((product) => (
             <div
@@ -75,7 +94,7 @@ export default function Carousel({ products }: CarouselProps) {
           ))
         }
       </div>
-      <div  className='  h-16 w-[5%] flex items-center justify-center'>
+      <div  className='  h-16 w-[15%] sm:w-[5%] flex items-center justify-center'>
         <IoIosArrowForward className='size-1/2 cursor-pointer '
           onClick={handleNextIndex} />
       </div>
