@@ -3,13 +3,14 @@
 import { categoriesMenu } from "@/constants";
 import Link from "next/link";
 import { useState } from "react";
+import { CgProfile } from "react-icons/cg";
 import { FaShoppingCart } from "react-icons/fa";
 
 export default function NavBar() {
   const [activeMenu, setActiveMenu] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('');
 
-  function handleEnterMenu(title:string) {
+  function handleEnterMenu(title: string) {
     setCurrentCategory(title);
     setActiveMenu(true);
   }
@@ -21,12 +22,11 @@ export default function NavBar() {
 
   return (
     <>
-      <div className={`hidden sm:flex w-full  ${activeMenu ?'h-[60%]' :'h-28'} fixed z-10  flex-col`}
-      onMouseLeave={handleLeaveMenu}>
-      
-        <div 
-       
-        className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
+      <div className={`hidden sm:flex w-full  ${activeMenu ? 'h-[60%]' : 'h-28'} fixed z-10  flex-col`}
+        onMouseLeave={handleLeaveMenu} >
+
+        <div className="w-full min-h-28 bg-gradient-to-r from-amber-800 via-amber-700 to-yellow-600 flex justify-center shadow-md">
+
           <div className="w-[12%] flex items-center justify-center">
             <Link href={"/"}><span className="text-3xl lg:text-5xl text-white font-thin tracking-widest">J M</span></Link>
           </div>
@@ -41,11 +41,10 @@ export default function NavBar() {
                 >
                   <Link
                     href={""}
-                    className={`${
-                      currentCategory === category.title
+                    className={`${currentCategory === category.title
                         ? "border-b-2 border-white opacity-100"
                         : "opacity-80"
-                    }`}
+                      }`}
                   >
                     {category.title}
                   </Link>
@@ -53,11 +52,19 @@ export default function NavBar() {
               ))}
             </ul>
           </nav>
-          <div className=" w-[10%] h-full flex items-center justify-center">
-            <Link href={"/Carrinho"}>
-              <FaShoppingCart size={"25%"}  color="white"/>
+
+          <div className=" w-[10%]  h-full flex gap-4 text-white text-opacity-90 items-center justify-center pr-2">
+
+            <Link href={'/carrinho'}>
+              <FaShoppingCart className="w-full min-w-5 min-h-10" />
             </Link>
+
+            <Link href={'/carrinho'} className="rounded-full ">
+              <CgProfile className="w-full min-w-5 min-h-10" />
+            </Link>
+
           </div>
+
         </div>
 
         {/* Dropdown Menu */}
