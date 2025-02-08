@@ -48,7 +48,7 @@ export const CategoriesCards = [
       title: "Lançamentos",
       subcategories: [
         { id:1,
-          subtitle: "Destaque",
+          subtitle: "Destaques",
           items: [
             { name: "Nike", link: "/destaques/nike" },
             { name: "Botafogo", link: "/destaques/botafogo" },
@@ -86,7 +86,7 @@ export const CategoriesCards = [
       title: "Ofertas",
       subcategories: [
         { id:5,
-          subtitle: "Destaque",
+          subtitle: "Destaques",
           items: [
             { name: "Vestuário", link: "/ofertas/destaque/vestuario" },
             { name: "Natal", link: "/ofertas/destaque/natal" },
@@ -393,6 +393,61 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     featured:true
   },
   
+
+
+]
+
+
+export const SingleProductImages : ProductTypeProps[] = [
+  {
+    id:1,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike2t.png',
+    featured:false
+  },
+  {
+    id:2,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike222.png',
+    featured:false
+  },
+  {
+    id:3,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike222.png',
+    featured:false
+  },
+  {
+    id:4,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike2222.png',
+    featured:false
+  },
+  {
+    id:5,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike22222.png',
+    featured:false
+  },
+  {
+    id:6,
+    name:'Nike Air Max',
+    category:'Casual',
+    price:590.99,
+    img:'/nike222222.png',
+    featured:false
+  }
+ 
 
 
 ]
