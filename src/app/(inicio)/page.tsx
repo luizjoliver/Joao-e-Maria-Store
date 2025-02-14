@@ -1,4 +1,4 @@
-"use client"
+
 
 import CarouselSection from "@/components/landPage/CarouselSection";
 import PictureSection from "@/components/landPage/PictureSection";

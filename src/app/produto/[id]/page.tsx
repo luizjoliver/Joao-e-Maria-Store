@@ -1,4 +1,3 @@
-
 import CarouselSingleProduct from '@/components/CarouselSingleProduct'
 import Footer from '@/components/landPage/Footer'
 import { CiHeart } from 'react-icons/ci';

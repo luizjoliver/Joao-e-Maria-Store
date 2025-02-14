@@ -3,22 +3,32 @@
 import { categoriesMenu } from "@/constants";
 import Link from "next/link";
 import { useState } from "react";
-import { CgProfile } from "react-icons/cg";
 import { FaShoppingCart } from "react-icons/fa";
+import Profile from "./Profile";
 
 export default function NavBar() {
   const [activeMenu, setActiveMenu] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('');
+  const [openProfileMenu,setOpenProfileMenu] = useState<boolean>(false)
 
   function handleEnterMenu(title: string) {
     setCurrentCategory(title);
+    setOpenProfileMenu(false)
     setActiveMenu(true);
+    
   }
 
   function handleLeaveMenu() {
     setActiveMenu(false);
     setCurrentCategory('');
   }
+
+  function handleClickOpenMenuProfile (){
+    setActiveMenu(false)
+    setOpenProfileMenu((current) => !current)
+
+  }
+  
 
   return (
     <>
@@ -55,13 +65,12 @@ export default function NavBar() {
 
           <div className=" w-[10%]  h-full flex gap-4 text-white text-opacity-90 items-center justify-center pr-2">
 
+          <Profile profileProps={{openProfileMenu,handleClickOpenMenuProfile}}/>
+          
             <Link href={'/carrinho'}>
               <FaShoppingCart className="w-full min-w-5 min-h-10" />
             </Link>
 
-            <Link href={'/carrinho'} className="rounded-full ">
-              <CgProfile className="w-full min-w-5 min-h-10" />
-            </Link>
 
           </div>
 
