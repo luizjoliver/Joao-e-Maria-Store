@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { CgProfile } from 'react-icons/cg'
 import { FaShoppingCart } from 'react-icons/fa'
 import { IoMdMenu } from 'react-icons/io'
 import MenuModal from './MenuModal'
@@ -23,7 +22,6 @@ export default function PhoneNavBar() {
           
           <div className="flex gap-4 text-white">
             <FaShoppingCart className="text-2xl" />
-            <CgProfile className="text-2xl" />
             <button 
               onClick={() => setIsMenuOpen(true)}
               aria-label="Abrir menu"

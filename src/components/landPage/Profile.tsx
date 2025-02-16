@@ -38,7 +38,7 @@ export default function Profile({ profileProps }: ProfileProps) {
 
                             <ul className="text-black text-sm  flex flex-col items-center justify-center gap-2 ">
                                 <Link href={'/login'} className="cursor-pointer hover:bg-gray-100 p-2 rounded-md w-full">Login</Link>
-                                <Link href={'/register'} className="cursor-pointer hover:bg-gray-100 p-2 rounded-md w-full">Cadastre</Link>
+                                <Link href={'/register'} className="cursor-pointer hover:bg-gray-100 p-2 rounded-md w-full">Cadastrar</Link>
                             </ul>
 
                         </div>)
