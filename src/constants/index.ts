@@ -232,7 +232,7 @@ export const CategoriesCards = [
       },
       {
         id:5,
-        name:'Nike Air Max',
+        name:'Tênis Nike Air Max SYSTM Masculino',
         category:'Casual',
         price:590.99,
         img:'/airmax.png',
@@ -401,7 +401,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
 export const SingleProductImages : ProductTypeProps[] = [
   {
     id:1,
-    name:'Nike Air Max',
+    name:' Tênis Nike Air Max SYSTM Masculino ',
     category:'Casual',
     price:590.99,
     img:'/nike2t.png',
@@ -409,7 +409,7 @@ export const SingleProductImages : ProductTypeProps[] = [
   },
   {
     id:2,
-    name:'Nike Air Max',
+    name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
     price:590.99,
     img:'/nike222.png',
@@ -417,7 +417,7 @@ export const SingleProductImages : ProductTypeProps[] = [
   },
   {
     id:3,
-    name:'Nike Air Max',
+    name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
     price:590.99,
     img:'/nike222.png',
@@ -425,7 +425,7 @@ export const SingleProductImages : ProductTypeProps[] = [
   },
   {
     id:4,
-    name:'Nike Air Max',
+    name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
     price:590.99,
     img:'/nike2222.png',
@@ -433,7 +433,7 @@ export const SingleProductImages : ProductTypeProps[] = [
   },
   {
     id:5,
-    name:'Nike Air Max',
+    name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
     price:590.99,
     img:'/nike22222.png',
@@ -441,7 +441,7 @@ export const SingleProductImages : ProductTypeProps[] = [
   },
   {
     id:6,
-    name:'Nike Air Max',
+    name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
     price:590.99,
     img:'/nike222222.png',
@@ -449,5 +449,35 @@ export const SingleProductImages : ProductTypeProps[] = [
   }
  
 
+
+]
+
+export const RecomendedProducts = [
+
+  {
+    id:1,
+    img:'/adidas.png',
+  
+  },
+  {
+    id:2,
+    img:'/sapatenis.png',
+  
+  },
+  {
+    id:3,
+    img:'/nike1.png',
+  
+  },
+  {
+    id:4,
+    img:'/sapatenis2.png',
+  
+  },
+  {
+    id:5,
+    img:'/airmax.png',
+  
+  }
 
 ]

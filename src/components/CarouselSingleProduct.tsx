@@ -1,17 +1,25 @@
-import { SingleProductImages } from '@/constants'
+import { Products, SingleProductImages } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
 export default function CarouselSingleProduct({ productId }: { productId: number }) {
 
+    console.log(productId);
+    
+    
+    const productImgBasedOnId = Products[ productId - 1 ].img
+
+    console.log(productImgBasedOnId);
+    
+
     const id = productId
     return (
-        <div className='h-full w-[70%] flex flex-col gap-4 '>
+        <div className='h-[45%] md:h-full w-full sm:w-[90%] md:w-[70%] flex flex-col gap-4  '>
 
             <div className='  aspect-square w-full h-[70%] relative'>
                 <Image
                     fill
-                    src={'/nike2.png'}
+                    src={productImgBasedOnId}
                     alt={`product ${id}`}
                     className='object-fill w-full h-full' />
             </div>
