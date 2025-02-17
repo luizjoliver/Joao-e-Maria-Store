@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
 import { CiHeart } from 'react-icons/ci';
 
 export type ProductTypeProps = {
@@ -10,7 +9,7 @@ export type ProductTypeProps = {
     img: string;
     category: string;
     colors?: string[];
-    featured:boolean;
+    featured: boolean;
 }
 
 export type ProductCardProps = {
@@ -31,31 +30,36 @@ export default function ProductsCard({ product }: ProductCardProps) {
                 />
             </div>
 
-            <div className='   w-full h-[25%] flex'>
-                <div className='  pl-3 w-[65%] h-full flex flex-col items-center justify-center gap-1'>
-                    <p className=' w-full h-[60%] '>
-                        {name}
-                    </p>
-                    <span className=' w-full h-[40%] text-black text-opacity-40 opacity-90 '>
-                        {category}
-                    </span>
-                    <span className=' w-full h-[40%] '>
-                        R$ {price}
-                    </span>
+            <div className='   w-full h-[25%] flex flex-col '>
+                <div className='w-full h-1/2  flex'>
 
-                </div>
-                <div className='  w-[35%] h-full'>
-                    <div className=' w-full h-[35%] flex items-center justify-center gap-2 p-1'>
+                    <div className='w-3/4  h-full flex items-center justify-start px-2'>
+                        <span>{name}</span>
+                    </div>
+
+                    <div className=' w-1/4 h-full flex flex-wrap  items-center justify-around'>
                         <span className='bg-red-950 rounded-full size-4'></span>
                         <span className='bg-white rounded-full size-4'></span>
-                        <span className='bg-blue-950 rounded-full size-4'></span>
+                        <span className='bg-blue-950 rounded-full size-4'></span> 
+                        
+                    </div>
+                </div>
 
+                <div className=' w-full h-1/2 flex'>
+                    <div className='text-slate-300 w-1/4 h-full flex items-center justify-start px-2'>
+                        <span>{category}</span>
+                    </div>
+
+                    <div className=' w-3/4 h-full flex items-center justify-end px-2'>
+                        <span>R${price}</span>
                     </div>
                 </div>
             </div>
 
-        <span className='absolute top-2 right-2 p-2 rounded-full bg-white hover:bg-black hover:bg-opacity-15'><CiHeart className='size-6'/></span>
-            
+            <span className='absolute top-2 right-2 p-2 rounded-full bg-white hover:bg-black hover:bg-opacity-15'><CiHeart className='size-6' /></span>
+
         </Link>
     )
 }
+
+
