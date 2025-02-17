@@ -29,8 +29,9 @@ export default async function ProdutoPage({
 
           <CarouselSingleProduct productId={productId} />
 
-          <div className='h-full w-full md:w-[30%]  flex flex-col  gap-2'>
-            <div className='w-full p-2 h-auto flex flex-col'>
+          <div className='h-full w-full md:w-[30%]  flex flex-col items-center justify-center  gap-2'>
+
+            <div className='w-full p-2 h-1/3 flex flex-col '>
               <h1 className='text-2xl font-semibold'>{productBasedOnId.name}</h1>
               <span className='text-opacity-70 text-black'>{productBasedOnId.category}</span>
               <span className='text-lg font-normal'>R$ {productBasedOnId.price}  no Pix</span>
@@ -39,13 +40,13 @@ export default async function ProdutoPage({
 
             </div>
 
-            <div className='w-full h-1/2  '>
+            <div className='w-full h-1/2   '>
 
              <NumerationProductComponent/>
 
             </div>
 
-            <div className='w-full p-2 h-1/3  flex flex-col gap-4 items-center justify-end'>
+            <div className='w-full p-2 h-1/3  flex flex-col  gap-4 items-center justify-start md:justify-end  '>
               <button className='px-4 py-2 bg-black  text-white rounded-full hover:bg-opacity-80 w-full'>Comprar</button>
               <div className='w-full flex items-center bg-[#F7F7F7] justify-center gap-2 px-4 py-2   text-black rounded-full  hover:ring-1 hover:ring-black'>
                 <button className=' w-full'> Favoritar </button>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NumerationProductComponent() {
   return (
-    <article className='flex flex-col items-center justify-center gap-2  '>
+    <article className='flex flex-col items-center justify-center gap-2   '>
     <h3 className='font-semibold'>Escolha o seu tamanho</h3>
     <div className='w-full flex items-center justify-center gap-4 p'>
       <div className='bg-[#F7F7F7] rounded-md min-h-14 w-1/4 flex items-center justify-center  hover:ring-1 hover:ring-black cursor-pointer'><span>35</span></div>
