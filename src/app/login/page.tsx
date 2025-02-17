@@ -2,7 +2,7 @@ import EntranceComponent from "@/components/LoginRegisterPages/EntranceComponent
 
 
 export default function LoginPage() {
-  //Login e senha
+  
   return (
     <>
       <EntranceComponent img="/loginImg.jpg" mode="Login" className="flex flex-col w-[60%] md:w-[40%] lg:w-1/2  gap-8 "  >
@@ -23,7 +23,7 @@ export default function LoginPage() {
         </div>
 
         <div>
-
+          
         </div>
 
       </EntranceComponent>

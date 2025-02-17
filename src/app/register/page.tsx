@@ -1,7 +1,6 @@
 import EntranceComponent from "@/components/LoginRegisterPages/EntranceComponent";
 
 export default function RegisterPage() {
-  //Nome , cidade , telefone ,endereço , data de nascimento , cpf ou npj , email , senha , confirmar senha
 
   return (
     <>
@@ -34,7 +33,7 @@ export default function RegisterPage() {
             </div>
 
             <div className="flex flex-col gap-1 ">
-              <label htmlFor="password">Senha</label>
+              <label htmlFor="password">Nova Senha</label>
               <input className="p-2 outline-none ring-black ring-1 focus:ring-blue-500 focus:ring-2" type="password" id="password"/>
             </div>
 

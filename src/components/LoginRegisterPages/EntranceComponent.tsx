@@ -6,7 +6,7 @@ type EntranceComponentProps = {
     mode: 'Login' | 'Cadastrar-se';
     img: string;
     onSubmit?: FormEventHandler<HTMLFormElement>;
-} & React.HTMLAttributes<HTMLFormElement>; // Permite outros atributos do formulário
+} & React.HTMLAttributes<HTMLFormElement>; 
 
 export default function EntranceComponent({ children, mode, img, onSubmit, ...rest }: EntranceComponentProps) {
     return (

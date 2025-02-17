@@ -1,5 +1,6 @@
 import CarouselSingleProduct from '@/components/CarouselSingleProduct'
 import Footer from '@/components/landPage/Footer'
+import Image from 'next/image';
 import { CiHeart } from 'react-icons/ci';
 
 
@@ -91,10 +92,21 @@ export default async function ProdutoPage({
       <div className='w-full  h-[30vh] flex items-center justify-center flex-col  gap-4'>
         <span>Veja também</span>
         <div className=' flex size-full gap-4 p-2'>
-          <div className='bg-slate-600 size-full'>1</div>
-          <div className='bg-slate-600 size-full'>2</div>
-          <div className='bg-slate-600 size-full'>3</div>
-          <div className='bg-slate-600 size-full'>4</div>
+          <div className='bg-slate-600 h-full w-1/2 relative'>
+            <Image src={'/nike1.png'} alt='nike1' fill/>
+          </div>
+          <div className='bg-slate-600 h-full w-1/2 relative'>
+            <Image src={'/sapatenis2.png'} alt='nike1' fill/>
+          </div>
+          <div className='bg-slate-600 h-full w-1/2 relative'>
+            <Image src={'/nike3.png'} alt='nike1' fill/>
+          </div>
+          <div className='bg-slate-600 h-full w-1/2 relative'>
+            <Image src={'/sapatenis.png'} alt='nike1' fill/>
+          </div>
+          <div className='bg-slate-600 h-full w-1/2 relative'>
+            <Image src={'/nike2.png'} alt='nike1' fill/>
+          </div>
         </div>
       </div>
 
