@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import React from 'react'
 
 type ProductColorsComponentType = {
   card: boolean;
   colors?: string[]
-  selectedColor?:number | string | null
-  handleSelectedColor?: (color: string) => void
+  selectedColor:string | null
+  selectedSize:number | string | null
 } & React.HTMLAttributes<HTMLDivElement>
 
 
@@ -13,7 +14,7 @@ const colorMap: Record<string, string> = {
   black: "bg-black",
   white: "bg-white border border-gray-300", // Borda para visibilidade
   red: "bg-red-500",
-  blue: "bg-blue-500",
+  blue: "bg-blue-200",
   amber: "bg-amber-800",
   slate: "bg-slate-500",
   green: "bg-green-500",
@@ -22,7 +23,7 @@ const colorMap: Record<string, string> = {
   pink: "bg-pink-500"
 };
 
-export default function ProductColorsComponent({ card, colors,handleSelectedColor,selectedColor, ...rest }: ProductColorsComponentType) {
+export default function ProductColorsComponent({ card, colors,selectedSize,selectedColor, ...rest }: ProductColorsComponentType) {
   return (
     <article
       {...rest}
@@ -35,11 +36,11 @@ export default function ProductColorsComponent({ card, colors,handleSelectedColo
 
           <div className="w-full h-full flex items-center justify-center gap-2">
             {colors?.map((color) => (
-              <span key={color} className={`${colorMap[color] }  size-4 rounded-full`}
-              ></span>
+              <Link  href={`?color=${color}&size=${selectedSize}`} key={color} className={`${colorMap[color] }  size-4 rounded-full`}
+              ></Link>
             ))}
           </div>
-
+ 
         )
           : (
 
@@ -47,8 +48,8 @@ export default function ProductColorsComponent({ card, colors,handleSelectedColo
 
             <div className="w-full h-full flex items-center justify-center gap-2">
               {colors?.map((color) => (
-                <span key={color} className={`${colorMap[color] } ${selectedColor === color && 'ring-1 ring-blue-500'} size-4 rounded-full cursor-pointer hover:ring-1 hover:ring-blue-500`}
-                onClick={() => handleSelectedColor!(color)}></span>
+                <Link href={`?color=${color}&size=${selectedSize}`} key={color} className={`${colorMap[color] } ${selectedColor === color && 'ring-1 ring-blue-500'} size-4 rounded-full cursor-pointer hover:ring-1 hover:ring-blue-500`}
+                ></Link>
               ))}
             </div>
           )
