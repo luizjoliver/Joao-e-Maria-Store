@@ -20,7 +20,7 @@ export default function SingleProductSection({product} :SingleProductTypeProps) 
 
     const [selectedColor,setSelectedColor] = useState<string | null>(null)
     const [selectedSize,setSelectedSize] = useState<number | string | null>(null)
-
+    // const [selectedImageIndex,setSelectedImageIndex] = useState<number>(1)
 
     const productBasedOnId = Products[ product.id  - 1 ]
     const productNumerations = productBasedOnId.sizes

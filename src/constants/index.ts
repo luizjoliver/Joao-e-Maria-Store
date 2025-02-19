@@ -242,7 +242,7 @@ export const CategoriesCards = [
         id:5,
         name:'Tênis Nike Air Max SC Masculino ',
         category:'Treino',
-        sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56],
+        sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56,89,67,86,77,21],
         colors:['white','blue','slate','black'],
         price:590.99,
         img:'/airmax.png',
