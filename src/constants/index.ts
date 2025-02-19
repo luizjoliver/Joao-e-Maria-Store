@@ -81,7 +81,7 @@ export const CategoriesCards = [
           ]
         }
       ]
-    },
+     },
     { 
       title: "Ofertas",
       subcategories: [
@@ -202,6 +202,8 @@ export const CategoriesCards = [
         id:1,
         name:'Adidas runner',
         category:'Treino',
+        sizes:[34,35,36,37,38,39,40,41.5,42,43],
+        colors:['black','amber','blue'],
         price:299.90,
         img:'/adidas.png',
         featured:false
@@ -210,6 +212,8 @@ export const CategoriesCards = [
         id:2,
         name:'Sapa tênis kesis',
         category:'Casual',
+        sizes:[34,35,36,37,38,39,40],
+        colors:['slate'],
         price:189.90,
         img:'/sapatenis.png',
         featured:false
@@ -218,6 +222,8 @@ export const CategoriesCards = [
         id:3,
         name:'Nike MD Runner',
         category:'Treino',
+        sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56],
+        colors:['red','blue','slate','black'],
         price:590.99,
         img:'/nike1.png',
         featured:false
@@ -226,6 +232,8 @@ export const CategoriesCards = [
         id:4,
         name:'Sapa tênis casual',
         category:'Casual',
+        sizes:[34,37,38,39,40,41.5,42,],
+        colors:['amber'],
         price:180.99,
         img:'/sapatenis2.png',
         featured:false
@@ -234,6 +242,8 @@ export const CategoriesCards = [
         id:5,
         name:'Tênis Nike Air Max SYSTM Masculino',
         category:'Casual',
+        sizes:[34,35,36,37,38,39,40,41.5,42,43],
+        colors:['white'],
         price:590.99,
         img:'/airmax.png',
         featured:false
@@ -242,6 +252,8 @@ export const CategoriesCards = [
         id:6,
         name:'Nike Viper V2',
         category:'Casual',
+        sizes:[25,28,34,35,36,37,38,39,40,41,42,43],
+        colors:['black','red'],
         price:690.99,
         img:'/nike2.png',
         featured:false
@@ -257,6 +269,7 @@ export const CategoriesCards = [
       name:'Adidas runner',
       category:'Treino',
       price:299.90,
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       img:'/nike4.png',
       featured:true
     },
@@ -264,6 +277,7 @@ export const CategoriesCards = [
       id:2,
       name:'Sapa tênis kesis',
       category:'Casual',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:189.90,
       img:'/sapatenis.png',
       featured:true
@@ -272,6 +286,7 @@ export const CategoriesCards = [
       id:3,
       name:'Nike MD Runner',
       category:'Treino',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:590.99,
       img:'/nike1.png',
       featured:true
@@ -280,6 +295,7 @@ export const CategoriesCards = [
       id:4,
       name:'Adidas runner',
       category:'Treino',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:299.90,
       img:'/adidas.png',
       featured:true
@@ -288,6 +304,7 @@ export const CategoriesCards = [
       id:5,
       name:'Sapa tênis casual',
       category:'Casual',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:180.99,
       img:'/nike3.png',
       featured:true
@@ -297,6 +314,7 @@ export const CategoriesCards = [
       id:6,
       name:'Nike MD Runner',
       category:'Treino',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:590.99,
       img:'/nike1.png',
       featured:true
@@ -306,6 +324,7 @@ export const CategoriesCards = [
       id:7,
       name:'Sapa tênis kesis',
       category:'Casual',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:189.90,
       img:'/sapatenis.png',
       featured:true
@@ -315,6 +334,7 @@ export const CategoriesCards = [
       id:8,
       name:'Sapa tênis casual',
       category:'Casual',
+      sizes:[34,35,36,37,38,39,40,41.5,42,43],
       price:180.99,
       img:'/sapatenis2.png',
       featured:true
@@ -329,6 +349,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:1,
     name:'Adidas runner',
     category:'Treino',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:299.90,
     img:'/bone1.png',
     featured:true
@@ -337,6 +358,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:2,
     name:'Sapa tênis kesis',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:189.90,
     img:'/feminina.png',
     featured:true
@@ -345,6 +367,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:3,
     name:'Nike MD Runner',
     category:'Treino',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/camisadetime.png',
     featured:true
@@ -353,6 +376,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:4,
     name:'Adidas runner',
     category:'Treino',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:299.90,
     img:'/feminina1.png',
     featured:true
@@ -361,6 +385,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:5,
     name:'Sapa tênis casual',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:180.99,
     img:'/meia1.png',
     featured:true
@@ -370,6 +395,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:6,
     name:'Nike MD Runner',
     category:'Treino',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/camisa1.png',
     featured:true
@@ -379,6 +405,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:7,
     name:'Sapa tênis kesis',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:189.90,
     img:'/camisa2.png',
     featured:true
@@ -388,6 +415,7 @@ export const ProductsFeatured2 : ProductTypeProps[] = [
     id:8,
     name:'Sapa tênis casual',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:180.99,
     img:'/camisa3.png',
     featured:true
@@ -403,6 +431,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:1,
     name:' Tênis Nike Air Max SYSTM Masculino ',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike2t.png',
     featured:false
@@ -411,6 +440,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:2,
     name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike222.png',
     featured:false
@@ -419,6 +449,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:3,
     name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike222.png',
     featured:false
@@ -427,6 +458,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:4,
     name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike2222.png',
     featured:false
@@ -435,6 +467,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:5,
     name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike22222.png',
     featured:false
@@ -443,6 +476,7 @@ export const SingleProductImages : ProductTypeProps[] = [
     id:6,
     name:'Tênis Nike Air Max SYSTM Masculino',
     category:'Casual',
+    sizes:[34,35,36,37,38,39,40,41.5,42,43],
     price:590.99,
     img:'/nike222222.png',
     featured:false

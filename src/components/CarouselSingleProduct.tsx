@@ -4,14 +4,10 @@ import React from 'react'
 
 export default function CarouselSingleProduct({ productId }: { productId: number }) {
 
-    console.log(productId);
+    
     
     
     const productImgBasedOnId = Products[ productId - 1 ].img
-
-    console.log(productImgBasedOnId);
-    
-
     const id = productId
     return (
         <div className='h-[45%] md:h-full w-full sm:w-[90%] md:w-[70%] flex flex-col gap-4  '>

@@ -1,12 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import { ProductCardProps} from './ProductsCard'
+
+export type FeaturedProductCardType = {
+    id: number;
+    name: string;
+    price: number;
+    img: string;
+    category: string;
+    colors?: string[];
+    featured: boolean;
+}
+
+export type FeaturedProductCardProps = {
+  product: FeaturedProductCardType;
+}
 
 
-
-
-export default function ProductCard({product} :ProductCardProps ) {
+export default function ProductCard({product} : FeaturedProductCardProps ) {
 
   const productId = product.id
 

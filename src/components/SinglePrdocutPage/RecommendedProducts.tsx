@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function RecomendadedProducts() {
+export default function RecommendedProducts() {
 
     //Mexer no 35vh para responsividade
     return (

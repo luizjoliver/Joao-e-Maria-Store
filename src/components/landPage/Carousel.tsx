@@ -2,13 +2,13 @@
 
 import React, { useEffect, useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
-import ProductCard from '../ProductCard'
 import { ProductsFeatured } from '@/constants'
-import { ProductTypeProps } from '../ProductsCard'
+import ProductCard, { FeaturedProductCardType } from '../ProductCard';
+
 
 
 type CarouselProps = {
-  products: ProductTypeProps[] 
+  products: FeaturedProductCardType[] 
   homePage:boolean;
 };
 
