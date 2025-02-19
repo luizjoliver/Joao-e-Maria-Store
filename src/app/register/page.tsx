@@ -33,7 +33,7 @@ export default function RegisterPage() {
             </div>
 
             <div className="flex flex-col gap-1 ">
-              <label htmlFor="password">Nova Senha</label>
+              <label htmlFor="password">Criar Senha</label>
               <input className="p-2 outline-none ring-black ring-1 focus:ring-blue-500 focus:ring-2" type="password" id="password"/>
             </div>
 
