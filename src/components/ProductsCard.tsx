@@ -39,7 +39,7 @@ export default function ProductsCard({ product }: ProductCardProps) {
                         <span>{name}</span>
                     </div>
 
-                    <ProductColorsComponent className='  w-1/4 h-full flex flex-wrap  items-center justify-around' card={false} colors={colors} />
+                    <ProductColorsComponent className='  w-1/4 h-full flex flex-wrap  items-center justify-around' card={false} colors={colors}  />
                 </div>
 
                 <div className=' w-full h-1/2 flex'>

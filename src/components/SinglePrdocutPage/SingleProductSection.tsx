@@ -1,27 +1,52 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import CarouselSingleProduct from '../CarouselSingleProduct'
 import { CiHeart } from 'react-icons/ci'
 import { Products } from '@/constants'
 import ProductColorsComponent from './ProductColorsComponent'
 import ProductNumerationsComponent from './NumerationProduct'
+import {  ProductTypeProps } from '../ProductsCard'
+import { useRouter } from 'next/navigation'
 
-export default function SingleProductSection({productId} :{productId:number}) {
 
-  
+type SingleProductTypeProps = {
+  product : ProductTypeProps;
+}
 
-    const productBasedOnId = Products[ productId  - 1 ]
-     const productNumerations = productBasedOnId.sizes
-     const productColors = productBasedOnId.colors
+export default function SingleProductSection({product} :SingleProductTypeProps) {
+
+  const router = useRouter()
+
+    const [selectedColor,setSelectedColor] = useState<string | null>(null)
+    const [selectedSize,setSelectedSize] = useState<number | string | null>(null)
+
+
+    const productBasedOnId = Products[ product.id  - 1 ]
+    const productNumerations = productBasedOnId.sizes
+    const productColors = productBasedOnId.colors
    
- 
+    useEffect(() =>{
 
-    
+
+      router.push(`?color=${selectedColor}&size=${selectedSize}`,{
+        scroll:false
+      })
+    },[selectedColor,selectedSize,router])
+
+    function handleSelectSize (size:number | string){
+        setSelectedSize(size)
+      }
+
+      function handleSelectedColor (color:string){
+        setSelectedColor(color)
+      }
 
 
   return (
     <div className='  h-full w-full xl:w-[70%] lg:w-[90%] flex flex-col md:flex-row items-center justify-center gap-6 p-2 '>
 
-          <CarouselSingleProduct productId={productId} />
+          <CarouselSingleProduct productId={product.id} />
 
           <div className='h-full w-full md:w-[30%]  flex flex-col items-center justify-center  gap-6 '>
 
@@ -37,11 +62,13 @@ export default function SingleProductSection({productId} :{productId:number}) {
             <div className='w-full h-1/2 flex flex-col gap-4  '>
 
              <div className='h-4/5 w-full '> 
-              <ProductNumerationsComponent numerations={productNumerations}/>
+              <ProductNumerationsComponent numerations={productNumerations} handleSelectSize={handleSelectSize} selectedSize={selectedSize}/>
              </div>
 
              <div className='h-1/5 w-full '> 
-              <ProductColorsComponent className='w-full h-full flex flex-col items-center justify-center gap-4' colors={productColors}  card/>
+              <ProductColorsComponent className='w-full h-full flex flex-col items-center justify-center gap-4' colors={productColors} 
+               selectedColor={selectedColor} handleSelectedColor={handleSelectedColor} card
+              />
              </div>
 
             </div>

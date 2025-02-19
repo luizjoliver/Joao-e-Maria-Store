@@ -29,7 +29,7 @@ export default function OfertasPage() {
 
             <div className="   w-full xl:w-[80%] lg:w-[95%] h-full lg:h-full grid  grid-cols-1 sm:grid-cols-2 auto-rows-auto lg:grid-cols-3 lg:grid-rows-2  gap-4 p-4">
 
-              {Products.map((product) => (
+              {Products.slice(0,6).map((product) => (
 
                 <ProductCard key={product.id} product={product} />
 

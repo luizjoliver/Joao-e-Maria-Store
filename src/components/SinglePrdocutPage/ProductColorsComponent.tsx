@@ -3,7 +3,11 @@ import React from 'react'
 type ProductColorsComponentType = {
   card: boolean;
   colors?: string[]
+  selectedColor?:number | string | null
+  handleSelectedColor?: (color: string) => void
 } & React.HTMLAttributes<HTMLDivElement>
+
+
 
 const colorMap: Record<string, string> = {
   black: "bg-black",
@@ -14,15 +18,16 @@ const colorMap: Record<string, string> = {
   slate: "bg-slate-500",
   green: "bg-green-500",
   yellow: "bg-yellow-500",
-  gray: "bg-gray-500"
+  gray: "bg-gray-500",
+  pink: "bg-pink-500"
 };
 
-export default function ProductColorsComponent({ card, colors, ...rest }: ProductColorsComponentType) {
+export default function ProductColorsComponent({ card, colors,handleSelectedColor,selectedColor, ...rest }: ProductColorsComponentType) {
   return (
     <article
       {...rest}
     >
-      <span className={`${card === false ? 'hidden' : 'block'} `}>Escolha a cor</span>
+      <span className={`${card === false || !colors ? 'hidden' : 'block'} `}>Escolha a cor</span>
 
 
       {
@@ -30,7 +35,8 @@ export default function ProductColorsComponent({ card, colors, ...rest }: Produc
 
           <div className="w-full h-full flex items-center justify-center gap-2">
             {colors?.map((color) => (
-              <span key={color} className={`${colorMap[color] || "bg-gray-500"} size-4 rounded-full`}></span>
+              <span key={color} className={`${colorMap[color] }  size-4 rounded-full`}
+              ></span>
             ))}
           </div>
 
@@ -41,7 +47,8 @@ export default function ProductColorsComponent({ card, colors, ...rest }: Produc
 
             <div className="w-full h-full flex items-center justify-center gap-2">
               {colors?.map((color) => (
-                <span key={color} className={`${colorMap[color] || "bg-gray-500"} size-4 rounded-full cursor-pointer hover:ring-1 hover:ring-blue-500`}></span>
+                <span key={color} className={`${colorMap[color] } ${selectedColor === color && 'ring-1 ring-blue-500'} size-4 rounded-full cursor-pointer hover:ring-1 hover:ring-blue-500`}
+                onClick={() => handleSelectedColor!(color)}></span>
               ))}
             </div>
           )

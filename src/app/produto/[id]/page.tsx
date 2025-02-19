@@ -1,6 +1,7 @@
-import RecommendedProducts from '@/components/SinglePrdocutPage/RecommendedProducts';
-import SingleProductSection from '@/components/SinglePrdocutPage/SingleProductSection';
 
+import RecommendedProducts from '@/components/SinglePrdocutPage/RecomendadedProducts';
+import SingleProductSection from '@/components/SinglePrdocutPage/SingleProductSection';
+import { Products } from '@/constants';
 
 
 export default async function ProdutoPage({
@@ -12,8 +13,10 @@ export default async function ProdutoPage({
 }) {
 
   const productId = (await params).id
-
+  const product = Products[productId - 1]
  
+  console.log(productId);
+  
 
   
   return (
@@ -22,7 +25,7 @@ export default async function ProdutoPage({
       <div className=' w-full md:h-[calc(100vh-112px)] h-[180vh]   flex flex-col  items-center py-4   justify-center '>
 
         
-        <SingleProductSection productId={productId}/>
+        <SingleProductSection  product={product}/>
         
 
       </div>
