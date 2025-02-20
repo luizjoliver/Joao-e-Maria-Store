@@ -4,8 +4,8 @@ import React from 'react'
 type ProductColorsComponentType = {
   card: boolean;
   colors?: string[]
-  selectedColor:string | null
-  selectedSize:number | string | null
+  selectedColor:string | undefined | string[]
+  selectedSize:string[] | string | undefined
 } & React.HTMLAttributes<HTMLDivElement>
 
 
