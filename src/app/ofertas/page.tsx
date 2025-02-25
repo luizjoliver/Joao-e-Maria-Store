@@ -7,7 +7,7 @@ import { BiSearch } from 'react-icons/bi'
 
 export default function OfertasPage() {
   return (
-    <main className="   h-[300vh] lg:h-screen w-screen pt-28  flex flex-col items-center justify-center   ">
+    <main className="   h-[300vh] lg:h-dvh  w-screen pt-28  flex flex-col items-center justify-center   ">
 
       <section className='w-screen h-full flex  sm:items-start items-center justify-center '>
         <div className=' w-screen lg:[90%] h-[95%]  flex items-center justify-center  p-4'>

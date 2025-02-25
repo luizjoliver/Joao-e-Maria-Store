@@ -26,7 +26,7 @@ export default function Home() {
 
       </section>
 
-      <section className="w-full min-h-screen flex flex-col items-center justify-center py-20 bg-gray-50">
+      <section className="w-full min-h-dvh flex flex-col items-center justify-center py-20 bg-gray-50">
         <p className="text-3xl sm:text-4xl font-bold mb-10 lg:mb-20 text-center">
           Compre por categoria
         </p>

@@ -4,8 +4,8 @@ import React from 'react'
 type ProductColorsComponentType = {
   card: boolean;
   colors?: string[]
-  selectedColor:string | undefined | string[]
-  selectedSize:string[] | string | undefined
+  selectedColor?:string | undefined | string[]
+  selectedSize?:string[] | string | undefined
 } & React.HTMLAttributes<HTMLDivElement>
 
 
@@ -36,8 +36,8 @@ export default function ProductColorsComponent({ card, colors,selectedSize,selec
 
           <div className="w-full h-full flex items-center justify-center gap-2">
             {colors?.map((color) => (
-              <Link  href={`?color=${color}&size=${selectedSize}`} key={color} className={`${colorMap[color] }  size-4 rounded-full`}
-              ></Link>
+              <span   key={color} className={`${colorMap[color] }  size-4 rounded-full`}
+              ></span>
             ))}
           </div>
  
