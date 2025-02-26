@@ -228,7 +228,7 @@ export const Products: ProductTypeProps[] = [
     price: 590.99,
     img: [
       { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] },
-      // { colorImg: 'blue', url: ['/nike1.png'] },
+      //  { colorImg: 'blue', url: ['/nike1.png'] },
       // { colorImg: 'slate', url: ['/nike1.png'] },
       // { colorImg: 'red', url: ['/nike1.png'] }
     ],
@@ -275,7 +275,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
-    img: [{ colorImg: 'black', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] }],
+    img: [{ colorImg: 'black', url: ['/nike5/nike.png','/nike5/nike1.png','/nike5/nike2.png','/nike5/nike3.png','/nike5/nike4.png'] }],
     featured: true
   },
   {
@@ -419,8 +419,8 @@ export const ProductsFeatured: ProductTypeProps[] = [
    
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/nike3.png'] },
-      { colorImg: 'gray', url: ['/nike3.png'] }
+      { colorImg: 'brown', url: ['/nike2/nike.png'] },
+      // { colorImg: 'gray', url: ['/nike3.png'] }
     ],
     featured: true
   },
@@ -432,8 +432,8 @@ export const ProductsFeatured: ProductTypeProps[] = [
   
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/nike3.png'] },
-      { colorImg: 'gray', url: ['/nike3.png'] }
+      { colorImg: 'brown', url: ['/nike3/nike.png'] },
+      // { colorImg: 'gray', url: ['/nike3.png'] }
     ],
     featured: true
   },
@@ -445,8 +445,8 @@ export const ProductsFeatured: ProductTypeProps[] = [
  
     price: 999.99,
     img: [
-      { colorImg: 'red', url: ['/nikeShox.png'] },
-      { colorImg: 'silver', url: ['/nikeShox.png'] }
+      { colorImg: 'red', url: ['/nike4/nike.png'] },
+      // { colorImg: 'silver', url: ['/nikeShox.png'] }
     ],
     featured: true
   },
@@ -457,7 +457,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
    
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/sapatenis.png'] }],
+    img: [{ colorImg: 'slate', url: ['/nike5/nike.png'] }],
     featured: true
   },
   {
@@ -482,7 +482,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Casual',
     sizes: ['P'],
     price: 299.9,
-    img: [{ colorImg: 'black', url: ['/bone1.png'] }],
+    img: [{ colorImg: 'black', url: ['/bone/bone.png'] }],
     featured: true
   },
   {
@@ -491,17 +491,17 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/feminina.png'] }],
+    img: [{ colorImg: 'slate', url: ['/nike5/nike.png'] }],
     featured: true
   },
   {
     id: 11,
-    name: 'Nike MD Runner',
+    name: 'Camisa Corinthians',
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 590.99,
     img: [
-      { colorImg: 'black', url: ['/camisadetime.png'] },
+      { colorImg: 'black', url: ['/camisa1/camisa.png'] },
       { colorImg: 'white', url: ['/camisadetime.png'] }
     ],
     featured: true
@@ -515,8 +515,8 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     price: 299.9,
     img: [
       { colorImg: 'black', url: ['/feminina1.png'] },
-      { colorImg: 'amber', url: ['/feminina1.png'] },
-      { colorImg: 'blue', url: ['/feminina1.png'] }
+      // { colorImg: 'amber', url: ['/feminina1.png'] },
+      // { colorImg: 'blue', url: ['/feminina1.png'] }
     ],
     featured: true
   },
@@ -540,8 +540,8 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 590.99,
     img: [
-      { colorImg: 'black', url: ['/camisa1.png'] },
-      { colorImg: 'white', url: ['/camisa1.png'] }
+      { colorImg: 'black', url: ['/camisa2/camisa.png'] },
+      // { colorImg: 'white', url: ['/camisa1.png'] }
     ],
     featured: true
   },
@@ -552,7 +552,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
 
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/camisa2.png'] }],
+    img: [{ colorImg: 'slate', url: ['/camisa3/camisa.png'] }],
     featured: true
   },
   {
@@ -562,8 +562,8 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/camisa3.png'] },
-      { colorImg: 'gray', url: ['/camisa3.png'] }
+      { colorImg: 'brown', url: ['/camisa4/camisa.png'] },
+      // { colorImg: 'gray', url: ['/camisa3.png'] }
     ],
     featured: true
   }

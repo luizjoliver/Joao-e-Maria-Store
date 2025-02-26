@@ -1,32 +1,42 @@
-"use client"
+import { Products } from '@/constants';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { Products } from '@/constants'
-import Image from 'next/image'
+type CarouselSingleProductTypeProps = {
+    productId: number;
+    selectedImg: string | string[];
+    selectedSize: string | string[] | undefined;
+    selectedColor: string | undefined | string[];
+}
 
-export default function CarouselSingleProduct({ productId }: { productId: number }) {
+export default function CarouselSingleProduct({ productId, selectedSize, selectedColor, selectedImg }: CarouselSingleProductTypeProps) {
 
-    
-    
-    
-    const productImgBasedOnId = Products[ productId - 1 ].img[0].url[0]
-    const SingleProductImages2 =  Products[ productId - 1 ].img
-    const id = productId
+
+    const productCurrentImageIndex = selectedImg;
+    const SingleProductImages = Products[productId - 1].img;
+    const imageIndex = parseInt(productCurrentImageIndex as string, 10);
+    const productImgPath = SingleProductImages[0].url[imageIndex];
+
+
+    const id = productId;
+
     return (
-        <div className='h-[45%] md:h-full w-full sm:w-[90%] md:w-[70%] flex flex-col gap-4  '>
+        <div className='h-[45%] md:h-full w-full sm:w-[90%] md:w-[70%] flex flex-col gap-4'>
 
-            <div className='  aspect-square w-full h-[70%] relative'>
+            <div className='aspect-square w-full h-[70%] relative'>
                 <Image
                     fill
-                    src={productImgBasedOnId}
+                    src={productImgPath}
                     alt={`product ${id}`}
-                    className='object-fill w-full h-full' />
+                    className='object-fill w-full h-full'
+                />
             </div>
 
-            <div className='  w-full h-[30%] flex gap-4 items-center justify-start overflow-x-scroll'>
-
-            {SingleProductImages2.map((imageGroup) =>
+            <div className='w-full h-[30%] flex gap-4 items-center justify-start overflow-x-scroll'>
+                {SingleProductImages.map((imageGroup) =>
                     imageGroup.url.map((imageUrl, subIndex) => (
-                        <div
+                        <Link
+                            href={`?imgIndex=${encodeURIComponent(String(subIndex))}&color=${encodeURIComponent(String(selectedColor))}&size=${encodeURIComponent(String(selectedSize))}`}
                             key={`${imageGroup.colorImg}-${subIndex}`}
                             className="bg-[#DBDBDB] w-[calc(25%-12px)] h-full flex-shrink-0 cursor-pointer flex items-center justify-center"
                         >
@@ -34,18 +44,14 @@ export default function CarouselSingleProduct({ productId }: { productId: number
                                 width={826}
                                 height={587}
                                 src={imageUrl}
-                                alt={`Produto  - Cor ${imageGroup.colorImg}`}
+                                alt={`Produto - Cor ${imageGroup.colorImg}`}
                                 className="object-fill w-full h-full"
                             />
-                        </div>
+                        </Link>
                     ))
                 )}
-
             </div>
 
         </div>
-    )
+    );
 }
-
-
-

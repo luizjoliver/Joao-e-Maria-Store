@@ -20,7 +20,7 @@ type ProductCartType = {
 
 export default function ProductButtons({ selectedColor, selectedSize, product }: ProductButtonsTypeProps) {
 
-    console.log(selectedColor, selectedSize);
+    
 
 
 

@@ -13,8 +13,8 @@ export default async function ProdutoPage({
   params,
   searchParams,
 }: {
-  params: Params
-  searchParams: SearchParams
+  params: Promise<Params>
+  searchParams: Promise<SearchParams>
 }) {
 
   const Params = await params;
@@ -25,6 +25,10 @@ export default async function ProdutoPage({
 
   const selectedColor = SearchParams.color || product.img[0].colorImg;
   const selectedSize = SearchParams.size || String(product.sizes[0]);
+  const selectedImg = SearchParams.imgIndex || '0'
+  const selectedIndex= String(product.img[0].url.findIndex(imagePath => imagePath === selectedImg));
+   
+    
 
   const productNumerations = product.sizes;
   const productColors = product.img.map((item) => item.colorImg);
@@ -38,7 +42,7 @@ export default async function ProdutoPage({
         
       <div className='  h-full w-full xl:w-[70%] lg:w-[90%] flex flex-col md:flex-row items-center justify-center gap-6 p-2 '>
 
-<CarouselSingleProduct productId={product.id} />
+<CarouselSingleProduct productId={product.id} selectedColor={selectedColor} selectedSize={selectedSize} selectedImg={selectedImg} />
 
 <div className='h-full w-full md:w-[30%]  flex flex-col items-center justify-center  gap-6 '>
 
@@ -54,12 +58,12 @@ export default async function ProdutoPage({
   <div className='w-full h-1/2 flex flex-col gap-4  '>
 
    <div className='h-4/5 w-full '> 
-    <ProductNumerationsComponent numerations={productNumerations}  selectedSize={selectedSize} selectedColor={selectedColor}/>
+    <ProductNumerationsComponent numerations={productNumerations}  selectedSize={selectedSize} selectedColor={selectedColor} selectedImgIndex={selectedIndex}/>
    </div>
 
    <div className='h-1/5 w-full '> 
     <ProductColorsComponent className='w-full h-full flex flex-col items-center justify-center gap-4' colors={productColors} 
-     selectedSize={selectedSize} selectedColor={selectedColor}  card
+     selectedSize={selectedSize} selectedColor={selectedColor} selectedImgIndex={selectedIndex} card
     />
    </div>
 
