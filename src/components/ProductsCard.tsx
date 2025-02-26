@@ -7,11 +7,15 @@ export type ProductTypeProps = {
     id: number;
     name: string;
     price: number;
-    img: string;
+    img:ImgType[];
     sizes:number[] | string [];
     category: string;
-    colors: string[];
     featured: boolean;
+}
+
+export type ImgType = {
+    colorImg:string;
+    url:string[];
 }
 
 export type ProductCardProps = {
@@ -19,12 +23,14 @@ export type ProductCardProps = {
 }
 export default function ProductsCard({ product }: ProductCardProps) {
 
-    const { id, name, price, category, img, colors } = product;
+    const { id, name, price, category, img} = product;
+    const colors = img.map((item) =>item.colorImg)
+    const firstProductImage = img[0].url[0]
 
     return (
         <Link className=" bg-slate-50 flex flex-col  items-center justify-center gap-4 pb-2 h-full w-full hover:scale-105 hover:cursor-pointer relative" href={`produto/${id}`}>
             <div className='bg-[#DBDBDB] aspect-auto relative  w-full xl:h-full  h-[80%]'>
-                <Image src={img}
+                <Image src={firstProductImage}
                     fill
                     className='  lg:object-cover object-contain '
                     alt=''

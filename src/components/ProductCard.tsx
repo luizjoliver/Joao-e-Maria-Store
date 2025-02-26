@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { ImgType } from './ProductsCard';
 
 export type FeaturedProductCardType = {
     id: number;
     name: string;
     price: number;
-    img: string;
+    img:ImgType[];
     category: string;
-    colors?: string[];
     featured: boolean;
 }
 
@@ -30,7 +30,7 @@ export default function ProductCard({product} : FeaturedProductCardProps ) {
             <Link className='bg-[#D6D6D6]  w-full h-full  relative ' href={`produto/${productId}`}>
                
                 <Image
-                src={product.img}
+                src={product.img[0].url[0]}
                 fill
                 className=''
                 alt=''
@@ -42,7 +42,7 @@ export default function ProductCard({product} : FeaturedProductCardProps ) {
           <div className='bg-[#D6D6D6]  w-full h-full  '>
 
                 <Image
-                src={product.img}
+                src={product.img[0].url[0]}
                 fill
                 className=''
                 alt=''

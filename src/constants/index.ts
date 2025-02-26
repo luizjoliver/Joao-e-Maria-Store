@@ -197,505 +197,377 @@ export const CategoriesCards = [
   ];
   
 
-//   export const Products : ProductTypeProps[] = [
-//     {
-//       id:1,
-//       name:'Adidas runner',
-//       category:'Treino',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       colors:['black','amber','blue'],
-//       price:299.90,
-//       img:'/adidas.png',
-//       featured:false
-//     },
-//     {
-//       id:2,
-//       name:'Sapa tênis kesis',
-//       category:'Casual',
-//       sizes:[34,35,36,37,38,39,40],
-//       colors:['slate'],
-//       price:189.90,
-//       img:'/sapatenis.png',
-//       featured:false
-//     },
-//     {
-//       id:3,
-//       name:'Nike MD Runner',
-//       category:'Treino',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56],
-//       colors:['black','blue','slate','red'],
-//       price:590.99,
-//       img:'/nike1.png',
-//       featured:false
-//     },
-//     {
-//       id:4,
-//       name:'Nike feminino SX-3',
-//       category:'Casual',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       price:380.99,
-//       colors:['pink'],
-//       img:'/nike3.png',
-//       featured:true
-//     },
-//     {
-//       id:5,
-//       name:'Tênis Nike Air Max SC Masculino ',
-//       category:'Treino',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56,89,67,86,77,21],
-//       colors:['white','blue','slate','black'],
-//       price:590.99,
-//       img:'/airmax.png',
-//       featured:false
-//     },
-//     {
-//       id:6,
-//       name:'Nike Shox',
-//       category:'casual',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       price:999.99,
-//       colors:['black','yellow'],
-//       img:'/nikeShox.png',
-//       featured:true
-//     },
-//     {
-//       id:7,
-//       name:'Sapa tênis kesis',
-//       category:'Casual',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       price:189.90,
-//       colors:['black'],
-//       img:'/sapatenis.png',
-//       featured:true
-//     },
-//     {
-//       id:8,
-//       name:'Sapa tênis casual',
-//       category:'Casual',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       price:180.99,
-//       colors:['black'],
-//       img:'/sapatenis2.png',
-//       featured:true
-//     },
-//     {
-//       id:9,
-//       name:'Boné Nike',
-//       category:'Casual',
-//       sizes:['P'],
-//       colors:['black','white','red'],
-//       price:299.90,
-//       img:'/bone1.png',
-//       featured:true
-//     },
-//     {
-//       id:10,
-//       name:'Sapa tênis X-gierge feminino ',
-//       category:'Casual',
-//       sizes:[34,35,36,37,38,39,40,41.5,42,43],
-//       colors:['pink','red','black'],
-//       price:189.90,
-//       img:'/feminina.png',
-//       featured:true
-//     },
-//     {
-//       id:11,
-//       name:'Camiseta 24/25 Corinthians',
-//       category:'Futebol',
-//       sizes:['P','M','G','X','XX','XXX'],
-//       price:590.99,
-//       colors:['black'],
-//       img:'/camisadetime.png',
-//       featured:true
-//     },
-//     {
-//       id:12,
-//       name:'Legging Shorts Academia',
-//       category:'Treino',
-//       sizes:['P','M'],
-//       colors:['slate'],
-//       price:299.90,
-//       img:'/feminina1.png',
-//       featured:true
-//     },
-//     {
-//       id:13,
-//       name:'Meia Nike Cano Longo',
-//       category:'Casual',
-//       sizes:['P','M'],
-//       price:180.99,
-//       colors:['white'],
-//       img:'/meia1.png',
-//       featured:true
-//     },
-//     {
-//       id:14,
-//       name:'Camisa Compressão Nike ',
-//       category:'Treino',
-//       sizes:["M"],
-//       price:590.99,
-//       colors:['black'],
-//       img:'/camisa1.png',
-//       featured:true
-//     },
-//     {
-//       id:15,
-//       name:'Camisa SB-Summer Nike',
-//       category:'Casual',
-//       sizes:["P","M","G"],
-//       colors:["amber"],
-//       price:189.90,
-//       img:'/camisa2.png',
-//       featured:true
-//     },
-//     {
-//       id:16,
-//       name:'Camisa FC Barcelona',
-//       category:'Futebol',
-//       sizes:["P","M","G","XX"],
-//       price:499.99,
-//       colors:['red'],
-//       img:'/camisa3.png',
-//       featured:true
-//     }
-// ]
 
-export const Products : ProductTypeProps[] = [
+export const Products: ProductTypeProps[] = [
   {
-    id:1,
-    name:'Adidas runner',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['black','amber','blue'],
-    price:299.90,
-    img:'/adidas.png',
-    featured:false
+    id: 1,
+    name: 'Adidas runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 299.9,
+    img: [
+      { colorImg: 'black', url: ['/adidas/adidas.png','/adidas/adidas1.png','/adidas/adidas2.png','/adidas/adidas3.png'] },
+  
+    ],
+    featured: false
   },
   {
-    id:2,
-    name:'Sapa tênis kesis',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40],
-    colors:['slate'],
-    price:189.90,
-    img:'/sapatenis.png',
-    featured:false
+    id: 2,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40],
+    price: 189.9,
+    img: [{ colorImg: 'slate', url: ['/sapatenis1/sapatenis.png','/sapatenis1/sapatenis1.png','/sapatenis1/sapatenis2.png','/sapatenis1/sapatenis3.png'] }],
+    featured: false
   },
   {
-    id:3,
-    name:'Nike MD Runner',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56],
-    colors:['black','blue','slate','red'],
-    price:590.99,
-    img:'/nike1.png',
-    featured:false
+    id: 3,
+    name: 'Nike MD Runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43, 44, 44.5, 50, 51, 56],
+    price: 590.99,
+    img: [
+      { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] },
+      // { colorImg: 'blue', url: ['/nike1.png'] },
+      // { colorImg: 'slate', url: ['/nike1.png'] },
+      // { colorImg: 'red', url: ['/nike1.png'] }
+    ],
+    featured: false
   },
   {
-    id:4,
-    name:'Nike feminino SX-3',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    price:380.99,
-    colors:['pink'],
-    img:'/nike3.png',
-    featured:true
+    id: 4,
+    name: 'Nike feminino SX-3',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 380.99,
+    img: [{ colorImg: 'pink', url: ['/nike2/nike.png','/nike2/nike1.png','/nike2/nike2.png'] }],
+    featured: true
   },
   {
-    id:5,
-    name:'Tênis Nike Air Max SC Masculino ',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43,44,44.5,50,51,56,89,67,86,77,21],
-    colors:['white','blue','slate','black'],
-    price:590.99,
-    img:'/airmax.png',
-    featured:false
+    id: 5,
+    name: 'Tênis Nike Air Max SC Masculino',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43, 44, 44.5, 50, 51, 56, 89, 67, 86, 77, 21],
+    price: 590.99,
+    img: [
+      { colorImg: 'white', url: ['/nike3/nike.png','/nike3/nike1.png','/nike3/nike2.png','/nike3/nike3.png']  },
+      // { colorImg: 'blue', url: ['/airmax.png'] },
+      // { colorImg: 'slate', url: ['/airmax.png'] },
+      // { colorImg: 'black', url: ['/airmax.png'] }
+    ],
+    featured: false
   },
   {
-    id:6,
-    name:'Nike Shox',
-    category:'casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    price:999.99,
-    colors:['black','yellow'],
-    img:'/nikeShox.png',
-    featured:true
+    id: 6,
+    name: 'Nike Shox',
+    category: 'casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 999.99,
+    img: [
+      { colorImg: 'black', url: ['/nike4/nike.png','/nike4/nike1.png','/nike4/nike2.png','/nike4/nike3.png','/nike4/nike4.png','/nike4/nike5.png'] },
+      // { colorImg: 'yellow', url: ['/nikeShox.png'] }
+    ],
+    featured: true
   },
   {
-    id:7,
-    name:'Sapa tênis kesis',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    price:189.90,
-    colors:['black'],
-    img:'/sapatenis.png',
-    featured:true
+    id: 7,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 189.9,
+    img: [{ colorImg: 'black', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] }],
+    featured: true
   },
   {
-    id:8,
-    name:'Sapa tênis casual',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    price:180.99,
-    colors:['black'],
-    img:'/sapatenis2.png',
-    featured:true
+    id: 8,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 180.99,
+    img: [{ colorImg: 'black', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] }],
+    featured: true
   },
   {
-    id:9,
-    name:'Boné Nike',
-    category:'Casual',
-    sizes:['P'],
-    colors:['black','white','red'],
-    price:299.90,
-    img:'/bone1.png',
-    featured:true
+    id: 9,
+    name: 'Boné Nike',
+    category: 'Casual',
+    sizes: ['P'],
+    price: 299.9,
+    img: [
+      { colorImg: 'black', url: ['/bone/bone.png','/bone/bone1.png'] },
+      // { colorImg: 'white', url: ['/bone1.png'] },
+      // { colorImg: 'red', url: ['/bone1.png'] }
+    ],
+    featured: true
   },
   {
-    id:10,
-    name:'Sapa tênis X-gierge feminino ',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['pink','red','black'],
-    price:189.90,
-    img:'/feminina.png',
-    featured:true
+    id: 10,
+    name: 'Sapa tênis 3sx femme',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 189.9,
+    img: [
+      { colorImg: 'pink', url: ['/nike5/nike.png','/nike5/nike1.png','/nike5/nike2.png','/nike5/nike3.png','/nike5/nike4.png'] },
+      // { colorImg: 'red', url: ['/feminina.png'] },
+      // { colorImg: 'black', url: ['/feminina.png'] }
+    ],
+    featured: true
   },
   {
-    id:11,
-    name:'Camiseta 24/25 Corinthians',
-    category:'Futebol',
-    sizes:['P','M','G','X','XX','XXX'],
-    price:590.99,
-    colors:['black'],
-    img:'/camisadetime.png',
-    featured:true
+    id: 11,
+    name: 'Camiseta 24/25 Corinthians',
+    category: 'Futebol',
+    sizes: ['P', 'M', 'G', 'X', 'XX', 'XXX'],
+    price: 590.99,
+    img: [{ colorImg: 'black', url: ['/camisa1/camisa.png','/camisa1/camisa1.png','/camisa1/camisa2.png','/camisa1/camisa3.png'] }],
+    featured: true
   },
   {
-    id:12,
-    name:'Legging Shorts Academia',
-    category:'Treino',
-    sizes:['P','M'],
-    colors:['slate'],
-    price:299.90,
-    img:'/feminina1.png',
-    featured:true
+    id: 12,
+    name: 'Legging Shorts Academia',
+    category: 'Treino',
+    sizes: ['P', 'M'],
+    price: 299.9,
+    img: [{ colorImg: 'slate', url: ['/feminina1.png'] }],
+    featured: true
   },
   {
-    id:13,
-    name:'Meia Nike Cano Longo',
-    category:'Casual',
-    sizes:['P','M'],
-    price:180.99,
-    colors:['white'],
-    img:'/meia1.png',
-    featured:true
+    id: 13,
+    name: 'Meia Nike Cano Longo',
+    category: 'Casual',
+    sizes: ['P', 'M'],
+    price: 180.99,
+    img: [{ colorImg: 'white', url: ['/meia1.png'] }],
+    featured: true
   },
   {
-    id:14,
-    name:'Camisa Compressão Nike ',
-    category:'Treino',
-    sizes:["M"],
-    price:590.99,
-    colors:['black'],
-    img:'/camisa1.png',
-    featured:true
+    id: 14,
+    name: 'Camisa Compressão Nike',
+    category: 'Treino',
+    sizes: ['M'],
+    price: 590.99,
+ 
+    img: [{ colorImg: 'black', url: ['/camisa2/camisa.png','/camisa2/camisa1.png','/camisa2/camisa2.png'] }],
+    featured: true
   },
   {
-    id:15,
-    name:'Camisa SB-Summer Nike',
-    category:'Casual',
-    sizes:["P","M","G"],
-    colors:["amber"],
-    price:189.90,
-    img:'/camisa2.png',
-    featured:true
-  },
-  {
-    id:16,
-    name:'Camisa FC Barcelona',
-    category:'Futebol',
-    sizes:["P","M","G","XX"],
-    price:499.99,
-    colors:['red'],
-    img:'/camisa3.png',
-    featured:true
-  }
-]
-
-
-  export const ProductsFeatured : ProductTypeProps[] = [
-    {
-      id:1,
-      name:'Adidas runner',
-      category:'Treino',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['black','amber','blue'],
-      price:299.90,
-      img:'/adidas.png',
-      featured:true
-    },
-    {
-      id:2,
-      name:'Sapa tênis kesis',
-      category:'Casual',
-      sizes:[34,35,36,37,38,39,40],
-      colors:['slate'],
-      price:189.90,
-      img:'/sapatenis.png',
-      featured:true
-    },
-    {
-      id:3,
-      name:'Nike MD Runner',
-      category:'Treino',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['black', 'white'],
-      price:590.99,
-      img:'/nike1.png',
-      featured:true
-    },
-    {
-      id:4,
-      name:'Sapa tênis casual',
-      category:'Casual',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['brown', 'gray'],
-      price:180.99,
-      img:'/nike3.png',
-      featured:true
-    },
-    {
-      id:5,
-      name:'Sapa tênis casual',
-      category:'Casual',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['brown', 'gray'],
-      price:180.99,
-      img:'/nike3.png',
-      featured:true
-    },
-    {
-      id:6,
-      name:'Nike Shox',
-      category:'casual',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['red', 'silver'],
-      price:999.99,
-      img:'/nikeShox.png',
-      featured:true
-    },
-    {
-      id:7,
-      name:'Sapa tênis kesis',
-      category:'Casual',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['slate'],
-      price:189.90,
-      img:'/sapatenis.png',
-      featured:true
-    },
-    {
-      id:8,
-      name:'Sapa tênis casual',
-      category:'Casual',
-      sizes:[34,35,36,37,38,39,40,41.5,42,43],
-      colors:['brown', 'gray'],
-      price:180.99,
-      img:'/sapatenis2.png',
-      featured:true
-    },
-]
-
-
-export const ProductsFeatured2 : ProductTypeProps[] = [
-  {
-    id:9,
-    name:'Boné Nike',
-    category:'Casual',
-    sizes:['P'],
-    colors:['black'],
-    price:299.90,
-    img:'/bone1.png',
-    featured:true
-  },
-  {
-    id:10,
-    name:'Sapa tênis kesis',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['slate'],
-    price:189.90,
-    img:'/feminina.png',
-    featured:true
-  },
-  {
-    id:11,
-    name:'Nike MD Runner',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['black', 'white'],
-    price:590.99,
-    img:'/camisadetime.png',
-    featured:true
-  },
-  {
-    id:12,
-    name:'Adidas runner',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['black','amber','blue'],
-    price:299.90,
-    img:'/feminina1.png',
-    featured:true
-  },
-  {
-    id:13,
-    name:'Sapa tênis casual',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['brown', 'gray'],
-    price:180.99,
-    img:'/meia1.png',
-    featured:true
-  },
-
-  {
-    id:14,
-    name:'Nike MD Runner',
-    category:'Treino',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['black', 'white'],
-    price:590.99,
-    img:'/camisa1.png',
-    featured:true
-  },
+    id: 15,
+    name: 'Camisa SB-Summer Nike',
+    category: 'Casual',
+    sizes: ['P', 'M', 'G'],
    
-  {
-    id:15,
-    name:'Sapa tênis kesis',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['slate'],
-    price:189.90,
-    img:'/camisa2.png',
-    featured:true
+    price: 189.9,
+    img: [{ colorImg: 'amber',  url: ['/camisa3/camisa.png','/camisa3/camisa1.png','/camisa3/camisa2.png'] }],
+    featured: true
   },
-  
   {
-    id:16,
-    name:'Sapa tênis casual',
-    category:'Casual',
-    sizes:[34,35,36,37,38,39,40,41.5,42,43],
-    colors:['brown', 'gray'],
-    price:180.99,
-    img:'/camisa3.png',
-    featured:true
-  },
-  
+    id: 16,
+    name: 'Camisa FC Barcelona',
+    category: 'Futebol',
+    sizes: ['P', 'M', 'G', 'XX'],
+    price: 499.99,
+   
+    img: [{ colorImg: 'red',url: ['/camisa4/camisa.png','/camisa4/camisa1.png','/camisa4/camisa2.png','/camisa4/camisa3.png','/camisa4/camisa4.png','/camisa4/camisa5.png'] }],
+    featured: true
+  }
+];
 
 
-]
+export const ProductsFeatured: ProductTypeProps[] = [
+  {
+    id: 1,
+    name: 'Adidas runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+   
+    price: 299.9,
+    img: [
+      { colorImg: 'black', url: ['/adidas/adidas.png','/adidas/adidas1.png','/adidas/adidas2.png','/adidas/adidas3.png'] },
+      // { colorImg: 'amber', url: ['/adidas.png'] },
+      // { colorImg: 'blue', url: ['/adidas.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 2,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40],
+
+    price: 189.9,
+    img: [{ colorImg: 'slate', url: ['/sapatenis1/sapatenis.png'] }],
+    featured: true
+  },
+  {
+    id: 3,
+    name: 'Nike MD Runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+
+    price: 590.99,
+    img: [
+      { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] },
+      // { colorImg: 'white', url: ['/nike1.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 4,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+   
+    price: 180.99,
+    img: [
+      { colorImg: 'brown', url: ['/nike3.png'] },
+      { colorImg: 'gray', url: ['/nike3.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 5,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+  
+    price: 180.99,
+    img: [
+      { colorImg: 'brown', url: ['/nike3.png'] },
+      { colorImg: 'gray', url: ['/nike3.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 6,
+    name: 'Nike Shox',
+    category: 'casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+ 
+    price: 999.99,
+    img: [
+      { colorImg: 'red', url: ['/nikeShox.png'] },
+      { colorImg: 'silver', url: ['/nikeShox.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 7,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+   
+    price: 189.9,
+    img: [{ colorImg: 'slate', url: ['/sapatenis.png'] }],
+    featured: true
+  },
+  {
+    id: 8,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 180.99,
+    img: [
+      { colorImg: 'brown', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] },
+      // { colorImg: 'gray', url: ['/sapatenis2.png'] }
+    ],
+    featured: true
+  }
+];
+
+
+export const ProductsFeatured2: ProductTypeProps[] = [
+  {
+    id: 9,
+    name: 'Boné Nike',
+    category: 'Casual',
+    sizes: ['P'],
+    price: 299.9,
+    img: [{ colorImg: 'black', url: ['/bone1.png'] }],
+    featured: true
+  },
+  {
+    id: 10,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 189.9,
+    img: [{ colorImg: 'slate', url: ['/feminina.png'] }],
+    featured: true
+  },
+  {
+    id: 11,
+    name: 'Nike MD Runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 590.99,
+    img: [
+      { colorImg: 'black', url: ['/camisadetime.png'] },
+      { colorImg: 'white', url: ['/camisadetime.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 12,
+    name: 'Adidas runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+ 
+    price: 299.9,
+    img: [
+      { colorImg: 'black', url: ['/feminina1.png'] },
+      { colorImg: 'amber', url: ['/feminina1.png'] },
+      { colorImg: 'blue', url: ['/feminina1.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 13,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+
+    price: 180.99,
+    img: [
+      { colorImg: 'brown', url: ['/meia1.png'] },
+      { colorImg: 'gray', url: ['/meia1.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 14,
+    name: 'Nike MD Runner',
+    category: 'Treino',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 590.99,
+    img: [
+      { colorImg: 'black', url: ['/camisa1.png'] },
+      { colorImg: 'white', url: ['/camisa1.png'] }
+    ],
+    featured: true
+  },
+  {
+    id: 15,
+    name: 'Sapa tênis kesis',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+
+    price: 189.9,
+    img: [{ colorImg: 'slate', url: ['/camisa2.png'] }],
+    featured: true
+  },
+  {
+    id: 16,
+    name: 'Sapa tênis casual',
+    category: 'Casual',
+    sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    price: 180.99,
+    img: [
+      { colorImg: 'brown', url: ['/camisa3.png'] },
+      { colorImg: 'gray', url: ['/camisa3.png'] }
+    ],
+    featured: true
+  }
+];
 
 export type SingleProductTypeProps = {
   id: number;
@@ -770,27 +642,27 @@ export const RecomendedProducts = [
 
   {
     id:1,
-    img:'/adidas.png',
+    img:'/adidas/adidas.png',
   
   },
   {
     id:2,
-    img:'/sapatenis.png',
+    img:'/sapatenis1/sapatenis.png',
   
   },
   {
     id:3,
-    img:'/nike1.png',
+    img:'/nike/nike.png',
   
   },
   {
     id:4,
-    img:'/sapatenis2.png',
+    img:'/sapatenis2/sapatenis.png',
   
   },
   {
     id:5,
-    img:'/airmax.png',
+    img:'/nike3/nike.png',
   
   }
 

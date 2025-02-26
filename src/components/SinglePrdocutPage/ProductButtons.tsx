@@ -1,6 +1,7 @@
 "use client"
 
 import { CiHeart } from 'react-icons/ci';
+import { ImgType } from '../ProductsCard';
 
 type ProductButtonsTypeProps = {
     selectedColor: string | string[] | undefined
@@ -12,7 +13,7 @@ type ProductCartType = {
     id: number;
     name: string;
     price: number;
-    img: string;
+    img: ImgType[];
     category: string;
     featured: boolean;
 }

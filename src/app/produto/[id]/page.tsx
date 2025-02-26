@@ -23,11 +23,11 @@ export default async function ProdutoPage({
   const productId = parseInt(Params.id, 10);
   const product = Products[productId - 1];
 
-  const selectedColor = SearchParams.color || product.colors[0];
+  const selectedColor = SearchParams.color || product.img[0].colorImg;
   const selectedSize = SearchParams.size || String(product.sizes[0]);
 
   const productNumerations = product.sizes;
-  const productColors = product.colors;
+  const productColors = product.img.map((item) => item.colorImg);
   
   
   return (
