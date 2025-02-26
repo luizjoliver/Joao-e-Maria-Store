@@ -1,3 +1,5 @@
+"use client"
+
 import { Products, SingleProductImages } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
@@ -23,7 +25,7 @@ export default function CarouselSingleProduct({ productId }: { productId: number
             <div className='  w-full h-[30%] flex gap-4 items-center justify-start overflow-x-scroll'>
 
                 {SingleProductImages.map((product) => (
-                    <div className=' bg-[#DBDBDB]  w-[calc(25%-12px)] h-full flex-shrink-0 flex items-center justify-center'
+                    <div className=' bg-[#DBDBDB]  w-[calc(25%-12px)] h-full flex-shrink-0 cursor-pointer flex items-center justify-center'
                         key={product.id}>
                         <Image
                             width={826}

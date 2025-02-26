@@ -1,10 +1,10 @@
 
 import CarouselSingleProduct from '@/components/CarouselSingleProduct';
 import ProductNumerationsComponent from '@/components/SinglePrdocutPage/NumerationProduct';
+import ProductButtons from '@/components/SinglePrdocutPage/ProductButtons';
 import ProductColorsComponent from '@/components/SinglePrdocutPage/ProductColorsComponent';
 import RecommendedProducts from '@/components/SinglePrdocutPage/RecomendadedProducts';
 import { Products } from '@/constants';
-import { CiHeart } from 'react-icons/ci';
 
 type SearchParams = { [key: string]: string | string[] | undefined }
 type Params = { id: string }
@@ -23,13 +23,12 @@ export default async function ProdutoPage({
   const productId = parseInt(Params.id, 10);
   const product = Products[productId - 1];
 
-  const selectedColor = SearchParams.color;
-  const selectedSize = SearchParams.size;
+  const selectedColor = SearchParams.color || product.colors[0];
+  const selectedSize = SearchParams.size || String(product.sizes[0]);
 
   const productNumerations = product.sizes;
   const productColors = product.colors;
   
-
   
   return (
     <div className=' w-full h-auto pt-28 flex gap-20 flex-col items-center justify-center '>
@@ -66,13 +65,7 @@ export default async function ProdutoPage({
 
   </div>
 
-  <div className='w-full p-2 h-1/3  flex flex-col  gap-4 items-center justify-start md:justify-end  '>
-    <button className='px-4 py-2 bg-black  text-white rounded-full hover:bg-opacity-80 w-full'>Comprar</button>
-    <div className='w-full flex items-center bg-[#F7F7F7] justify-center gap-2 px-4 py-2   text-black rounded-full  hover:ring-1 hover:ring-black'>
-      <button className=' w-full'> Favoritar </button>
-      <CiHeart />
-    </div>
-  </div>
+ <ProductButtons product={product} selectedColor={selectedColor} selectedSize={selectedSize}/>
 
 </div>
 </div>

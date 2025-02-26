@@ -10,7 +10,7 @@ export type ProductTypeProps = {
     img: string;
     sizes:number[] | string [];
     category: string;
-    colors?: string[];
+    colors: string[];
     featured: boolean;
 }
 
