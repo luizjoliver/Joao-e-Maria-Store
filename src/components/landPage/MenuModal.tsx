@@ -31,7 +31,7 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
   return createPortal(
     <div className="fixed inset-0 z-50">
       <div 
-        className="absolute inset-0 bg-black/50" 
+        className="absolute inset-0 bg-black/50 " 
         onClick={onClickCloseMenuModal}
         role="button"
         aria-label="Fechar menu"
@@ -41,7 +41,7 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
         {/* Botão de Fechar */}
         <button 
           onClick={onClickCloseMenuModal}
-          className="absolute top-4 right-4 text-white hover:text-amber-200 transition-colors"
+          className="absolute top-0 right-1 sm:top-1 sm:right-4 text-white hover:text-amber-200 transition-colors"
           aria-label="Fechar menu"
         >
           <IoMdClose size={24} />
@@ -59,9 +59,9 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
               </div>
             </>
           ) : (
-            <div className="flex gap-4">
-              <Link href="/login" className="text-sm hover:underline">Entrar</Link>
-              <Link href="/cadastro" className="text-sm hover:underline">Cadastrar</Link>
+            <div className="flex gap-4 sm:justify-around sm:w-full">
+              <Link href="/login" className="text-sm hover:underline" onClick={onClickCloseMenuModal}>Entrar</Link>
+              <Link href="/register" className="text-sm hover:underline" onClick={onClickCloseMenuModal}>Cadastrar</Link>
             </div>
           )}
         </div>

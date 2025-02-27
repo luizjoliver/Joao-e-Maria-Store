@@ -1,16 +1,39 @@
-import CarrinhoItens from './CarrinhoItens';
+"use client"
 
+import { useEffect, useState } from 'react';
+import CarrinhoItens from './CarrinhoItens';
+import { ImgType } from '../ProductsCard';
+
+export type CartType = {
+  quantity:number;
+  id: number;
+  name: string;
+  price: number;
+  img: ImgType[];
+  size: number | string;
+  category: string;
+  color?: string;
+};
+
+export type CartTypeItens = CartType[];
 
 export default function CarrinhoSection() {
 
+  const [cartItems, setCartItems] = useState<CartTypeItens>([]);
 
+  useEffect(() => {
+    const itemsFromLocalStorage = JSON.parse(localStorage.getItem('products') || '[]');
+    setCartItems(itemsFromLocalStorage);
+  }, []);
+
+  // const totalCompra = cartItems.reduce((acc, item) => acc + item.price, 0);
 
   return (
     <div className=' w-full flex-1 flex flex-col justify-between items-center gap-10 p-2 '>
           
-    <CarrinhoItens/>  
+    <CarrinhoItens cartItems={cartItems} setCartItems={setCartItems}/>  
 
-      {/* seção confimar compra */}
+      
       <div className='w-full h-72 flex flex-col lg:flex-row '>
 
         <div className='lg:w-2/3 w-full h-full flex flex-col lg:flex-row gap-4 p-4'>
@@ -72,3 +95,7 @@ export default function CarrinhoSection() {
     </div>
   )
 }
+
+
+
+

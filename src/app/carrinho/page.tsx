@@ -1,7 +1,5 @@
-// import Image from 'next/image'
 import CarrinhoSection from '@/components/CarrinhoPage/CarrinhoSection';
-// import { FiMinus, FiPlus } from 'react-icons/fi'
-// import { GoTrash } from 'react-icons/go'
+
 
 export default function CarrinhoPage() {
 
@@ -53,6 +51,8 @@ export default function CarrinhoPage() {
             </div>
           </div>
         </div>
+
+        
 
        <CarrinhoSection/>
        
