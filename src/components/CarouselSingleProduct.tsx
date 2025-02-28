@@ -32,7 +32,7 @@ export default function CarouselSingleProduct({ productId, selectedSize, selecte
                 />
             </div>
 
-            <div className='w-full h-[30%] flex gap-4 items-center justify-start overflow-x-scroll'>
+            <div className='w-full h-auto flex gap-4 items-center justify-start overflow-x-scroll'>
                 {SingleProductImages.map((imageGroup) =>
                     imageGroup.url.map((imageUrl, subIndex) => (
                         <Link
@@ -41,8 +41,8 @@ export default function CarouselSingleProduct({ productId, selectedSize, selecte
                             className="bg-[#DBDBDB] w-[calc(25%-12px)] h-full flex-shrink-0 cursor-pointer flex items-center justify-center"
                         >
                             <Image
-                                width={826}
-                                height={587}
+                                width={930}
+                                height={662}
                                 src={imageUrl}
                                 alt={`Produto - Cor ${imageGroup.colorImg}`}
                                 className="object-fill w-full h-full"
