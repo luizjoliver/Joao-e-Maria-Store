@@ -4,15 +4,18 @@ import { useEffect, useState } from 'react';
 import CarrinhoItens from './CarrinhoItens';
 import { ImgType } from '../ProductsCard';
 
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '../ui/alert-dialog';
+import { IoIosClose } from 'react-icons/io';
+
 export type CartType = {
-  quantity:number;
+  quantity: number;
   id: number;
   name: string;
   price: number;
   img: ImgType[];
   size: number | string;
   category: string;
-  color?: string;
+  color: string;
 };
 
 export type CartTypeItens = CartType[];
@@ -26,14 +29,21 @@ export default function CarrinhoSection() {
     setCartItems(itemsFromLocalStorage);
   }, []);
 
-  // const totalCompra = cartItems.reduce((acc, item) => acc + item.price, 0);
+  function FinishBuy(){
+    localStorage.removeItem("products")
+    setCartItems([])
+  }
+
+  const isAnyProduct = cartItems.length > 0
+  const totalCompra = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
 
   return (
     <div className=' w-full flex-1 flex flex-col justify-between items-center gap-10 p-2 '>
-          
-    <CarrinhoItens cartItems={cartItems} setCartItems={setCartItems}/>  
 
-      
+      <CarrinhoItens cartItems={cartItems} setCartItems={setCartItems} />
+
+
       <div className='w-full h-72 flex flex-col lg:flex-row '>
 
         <div className='lg:w-2/3 w-full h-full flex flex-col lg:flex-row gap-4 p-4'>
@@ -77,18 +87,33 @@ export default function CarrinhoSection() {
             <p className='text-3xl font-semibold'>Resumo</p>
             <div className='flex items-center justify-between border-b-slate-300 border-b'>
               <p>Valor dos produtos</p>
-              <p className='font-semibold'>R$3.000</p>
+              <p className='font-semibold'>R${totalCompra.toFixed(2)}</p>
             </div>
             <div className='flex items-center justify-between border-b-slate-300 border-b'>
               <p>Frete</p>
-              <p className='font-semibold'>R$30</p>
+              <p className='font-semibold'>R$0</p>
             </div>
             <div className='flex items-center justify-between border-b-slate-300 border-b'>
               <p>Total da Compra</p>
-              <p className='font-semibold'>R$3.030</p>
+              <p className='font-semibold'>R${totalCompra.toFixed(2)}</p>
             </div>
           </div>
-          <button className='bg-black text-white rounded-lg p-2 hover:bg-opacity-80'>Continuar</button>
+
+          <AlertDialog>
+            <AlertDialogTrigger className={`bg-black text-white rounded-lg p-2 hover:bg-opacity-80 ${isAnyProduct ? '' : 'disabled:cursor-not-allowed'} `}
+              disabled={!isAnyProduct} 
+              onClick={FinishBuy}>Open</AlertDialogTrigger>
+            <AlertDialogContent className=''>
+              <AlertDialogHeader className='relative'>
+              <AlertDialogAction className='absolute top-0 right-0 size-7 '><IoIosClose /></AlertDialogAction>
+                <AlertDialogTitle className='text-green-500'>Compra realizada!</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Sua Compra foi Realizada na JM Store 
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+            </AlertDialogContent>
+          </AlertDialog>
+
         </div>
       </div>
 

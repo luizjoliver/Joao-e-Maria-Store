@@ -5,6 +5,8 @@ import { BiMinus, BiPlus } from 'react-icons/bi';
 import { CartTypeItens } from './CarrinhoSection';
 import { FaShoppingCart } from 'react-icons/fa';
 import { FaTrashCan } from 'react-icons/fa6';
+import { colorMap } from '../SinglePrdocutPage/ProductColorsComponent';
+import { toast } from 'sonner';
 
 type CarrinhoItemsProps = {
   cartItems: CartTypeItens;
@@ -12,15 +14,18 @@ type CarrinhoItemsProps = {
 };
 
 export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItemsProps) {
-  
+
   function handleDeleteProductFromCart(index: number) {
     const newCartItems = cartItems.filter((_, i) => i !== index);
     setCartItems(newCartItems);
     localStorage.setItem('products', JSON.stringify(newCartItems));
+    toast.success('Produto Deletado do Carrinho!',{
+      style:{ backgroundColor: '#dc2626', color: 'white' }
+    } )
   }
 
   function handleIncreaseQuantity(index: number) {
-    const updatedCart = cartItems.map((item, i) => 
+    const updatedCart = cartItems.map((item, i) =>
       i === index ? { ...item, quantity: item.quantity + 1 } : item
     );
     setCartItems(updatedCart);
@@ -28,7 +33,7 @@ export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItems
   }
 
   function handleDecreaseQuantity(index: number) {
-    const updatedCart = cartItems.map((item, i) => 
+    const updatedCart = cartItems.map((item, i) =>
       i === index && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
     );
     setCartItems(updatedCart);
@@ -36,10 +41,10 @@ export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItems
   }
 
   return (
-    cartItems.length === 0 ? ( 
+    cartItems.length === 0 ? (
       <div className='w-full h-full '>
         <div className='flex gap-2 size-full items-center justify-start'>
-          <FaShoppingCart/> <span>Carrinho Vazio</span>
+          <FaShoppingCart /> <span>Carrinho Vazio</span>
         </div>
       </div>
     ) : (
@@ -54,7 +59,10 @@ export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItems
               <div className='h-full lg:w-4/5 w-full flex flex-col flex-1 text-base lg:text-sm'>
                 <p>Modelo: {item.name}</p>
                 <p>Estilo: {item.category}</p>
-                <p>Cor: {item.color ?? 'N/A'}</p>
+                <div className='flex gap-2 items-center '>
+                  <p>Cor:</p> 
+                  <span className={`${colorMap[item.color]}  size-3 rounded-full`}> </span> 
+                </div>
                 <p>Tamanho: {item.size}</p>
                 <p className='lg:hidden'>Valor: R$ {item.price}</p>
               </div>
@@ -76,11 +84,11 @@ export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItems
 
           <div className='h-full flex lg:w-1/3 w-full'>
             <div className='h-full w-1/2 hidden lg:flex items-start justify-center pt-5'>
-              <span>R$ {item.price}</span>
+              <span>R$ {item.price.toFixed(2)}</span>
             </div>
             <div className='h-full w-full lg:w-1/2 flex items-center lg:items-center justify-between lg:justify-center lg:pt-5 gap-4 '>
               <span className='lg:hidden text-xl font-semibold'>Total: R$ {item.price * item.quantity}</span>
-              <span className='font-semibold'>{item.price * item.quantity}</span>
+              <span className='font-semibold'>{(item.price * item.quantity).toFixed(2)}</span>
               <button className='hover:text-red-500 cursor-pointer' onClick={() => handleDeleteProductFromCart(index)}>
                 <FaTrashCan />
               </button>

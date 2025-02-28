@@ -11,7 +11,7 @@ type ProductColorsComponentType = {
 
 
 
-const colorMap: Record<string, string> = {
+export const colorMap: Record<string, string> = {
   black: "bg-black",
   white: "bg-white border border-gray-300", // Borda para visibilidade
   red: "bg-red-500",

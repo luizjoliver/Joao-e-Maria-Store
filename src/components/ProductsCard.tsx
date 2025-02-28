@@ -11,6 +11,7 @@ export type ProductTypeProps = {
     sizes:number[] | string [];
     category: string;
     featured: boolean;
+    colors:string[]
 }
 
 export type ImgType = {
@@ -24,7 +25,7 @@ export type ProductCardProps = {
 export default function ProductsCard({ product }: ProductCardProps) {
 
     const { id, name, price, category, img} = product;
-    const colors = img.map((item) =>item.colorImg)
+    const colors = product.colors
     const firstProductImage = img[0].url[0]
 
     return (

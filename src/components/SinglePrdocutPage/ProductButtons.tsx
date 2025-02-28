@@ -1,15 +1,27 @@
 "use client"
 
 import { CiHeart } from 'react-icons/ci';
-import { ProductTypeProps } from '../ProductsCard';
+import {  ProductTypeProps } from '../ProductsCard';
+import { toast } from 'sonner';
 
 type ProductButtonsTypeProps = {
     selectedColor: string | string[] | undefined
     selectedSize: string | string[] | undefined
-    product: ProductCartType
+    product: ProductTypeProps
 }
 
-type ProductCartType = ProductTypeProps
+
+
+type ProductCartType = {
+    id:number;
+    category:string;
+    size:number | string;
+    color:string;
+    price:number;
+    name:string;
+    quantity:number;
+    featured:boolean;
+}
 
 export default function ProductButtons({ selectedColor, selectedSize, product }: ProductButtonsTypeProps) {
 
@@ -17,23 +29,45 @@ export default function ProductButtons({ selectedColor, selectedSize, product }:
 
 
 
-    function handleAddToCart() {
+ function handleAddToCart() {
  
     const allProductsFromLocalStorage = localStorage.getItem('products');
 
-    const productsArray :ProductCartType[] | [] = allProductsFromLocalStorage ? JSON.parse(allProductsFromLocalStorage) : [];
+    const productsArray : ProductCartType[] | [] = allProductsFromLocalStorage ? JSON.parse(allProductsFromLocalStorage) : [];
 
     const productToAdd = {
+        id:product.id,
         quantity:1,
         color: selectedColor,
         size: selectedSize,
-        ...product
+        category:product.category,
+        price:product.price,
+        name:product.name,
+        featured:product.featured,
+        img:product.img
     };
+    
 
+ const existingProductIndex = productsArray.findIndex(item => 
+     item.id === product.id &&
+     item.color === selectedColor &&
+     item.size === selectedSize
+ );
 
-
-
+ if(existingProductIndex !== -1){
+    productsArray[existingProductIndex].quantity += 1;
+    localStorage.setItem('products', JSON.stringify([...productsArray]));
+    toast.success('Produto Adicionado ao Carrinho!', {
+        style: { backgroundColor: '#22c55e', color: 'white' } 
+    });
+ }else{
     localStorage.setItem('products', JSON.stringify([...productsArray, productToAdd]));
+    toast.success('Produto Adicionado ao Carrinho!', {
+        style: { backgroundColor: '#22c55e', color: 'white' } 
+    });
+ }
+
+
     }
 
     return (

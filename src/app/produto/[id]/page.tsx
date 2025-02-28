@@ -32,8 +32,11 @@ export default async function ProdutoPage({
   const selectedIndex = getImageIndex !== '-1' ? getImageIndex : String(selectedImg)
 
   const productNumerations = product.sizes;
-  const productColors = product.img.map((item) => item.colorImg);
-
+  // const productColors = product.img.map((item) => item.colorImg);
+  const productColors = product.colors
+ 
+  
+  
 
 
   return (
@@ -46,7 +49,7 @@ export default async function ProdutoPage({
 
           <CarouselSingleProduct productId={product.id} selectedColor={selectedColor} selectedSize={selectedSize} selectedImg={selectedImg} />
 
-          <div className='h-full w-full md:w-[30%]  flex flex-col items-center justify-center  gap-6 '>
+          <div className='h-full w-full md:w-[30%]  flex flex-col items-center justify-center '>
 
             <div className='w-full p-2 h-1/3 flex flex-col '>
               <h1 className='text-2xl font-semibold'>{product.name}</h1>

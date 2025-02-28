@@ -204,6 +204,7 @@ export const Products: ProductTypeProps[] = [
     name: 'Adidas runner',
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
+    colors:['black','amber','blue'],
     price: 299.9,
     img: [
       { colorImg: 'black', url: ['/adidas/adidas.png','/adidas/adidas1.png','/adidas/adidas2.png','/adidas/adidas3.png'] },
@@ -216,6 +217,7 @@ export const Products: ProductTypeProps[] = [
     name: 'Sapa tênis kesis',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40],
+    colors:['slate'],
     price: 189.9,
     img: [{ colorImg: 'slate', url: ['/sapatenis1/sapatenis.png','/sapatenis1/sapatenis1.png','/sapatenis1/sapatenis2.png','/sapatenis1/sapatenis3.png'] }],
     featured: false
@@ -226,6 +228,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43, 44, 44.5, 50, 51, 56],
     price: 590.99,
+    colors:['black','blue','slate','red'],
     img: [
       { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] },
       //  { colorImg: 'blue', url: ['/nike1.png'] },
@@ -238,6 +241,7 @@ export const Products: ProductTypeProps[] = [
     id: 4,
     name: 'Nike feminino SX-3',
     category: 'Casual',
+    colors:['pink'],
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 380.99,
     img: [{ colorImg: 'pink', url: ['/nike2/nike.png','/nike2/nike1.png','/nike2/nike2.png'] }],
@@ -249,6 +253,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43, 44, 44.5, 50, 51, 56, 89, 67, 86, 77, 21],
     price: 590.99,
+    colors:['white','blue','slate','black'],
     img: [
       { colorImg: 'white', url: ['/nike3/nike.png','/nike3/nike1.png','/nike3/nike2.png','/nike3/nike3.png']  },
       // { colorImg: 'blue', url: ['/airmax.png'] },
@@ -263,6 +268,7 @@ export const Products: ProductTypeProps[] = [
     category: 'casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 999.99,
+    colors:['black','yellow'],
     img: [
       { colorImg: 'black', url: ['/nike4/nike.png','/nike4/nike1.png','/nike4/nike2.png','/nike4/nike3.png','/nike4/nike4.png','/nike4/nike5.png'] },
       // { colorImg: 'yellow', url: ['/nikeShox.png'] }
@@ -275,6 +281,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
+    colors:['black'],
     img: [{ colorImg: 'black', url: ['/nike5/nike.png','/nike5/nike1.png','/nike5/nike2.png','/nike5/nike3.png','/nike5/nike4.png'] }],
     featured: true
   },
@@ -284,6 +291,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
+    colors:['black'],
     img: [{ colorImg: 'black', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] }],
     featured: true
   },
@@ -298,6 +306,7 @@ export const Products: ProductTypeProps[] = [
       // { colorImg: 'white', url: ['/bone1.png'] },
       // { colorImg: 'red', url: ['/bone1.png'] }
     ],
+    colors:['black','white','red'],
     featured: true
   },
   {
@@ -311,6 +320,7 @@ export const Products: ProductTypeProps[] = [
       // { colorImg: 'red', url: ['/feminina.png'] },
       // { colorImg: 'black', url: ['/feminina.png'] }
     ],
+    colors:['pink','red','black'],
     featured: true
   },
   {
@@ -320,6 +330,7 @@ export const Products: ProductTypeProps[] = [
     sizes: ['P', 'M', 'G', 'X', 'XX', 'XXX'],
     price: 590.99,
     img: [{ colorImg: 'black', url: ['/camisa1/camisa.png','/camisa1/camisa1.png','/camisa1/camisa2.png','/camisa1/camisa3.png'] }],
+    colors:['black','white'],
     featured: true
   },
   {
@@ -329,6 +340,7 @@ export const Products: ProductTypeProps[] = [
     sizes: ['P', 'M'],
     price: 299.9,
     img: [{ colorImg: 'slate', url: ['/feminina1.png'] }],
+    colors:['slate'],
     featured: true
   },
   {
@@ -338,6 +350,7 @@ export const Products: ProductTypeProps[] = [
     sizes: ['P', 'M'],
     price: 180.99,
     img: [{ colorImg: 'white', url: ['/meia1.png'] }],
+    colors:['white'],
     featured: true
   },
   {
@@ -345,6 +358,7 @@ export const Products: ProductTypeProps[] = [
     name: 'Camisa Compressão Nike',
     category: 'Treino',
     sizes: ['M'],
+    colors:['black'],
     price: 590.99,
  
     img: [{ colorImg: 'black', url: ['/camisa2/camisa.png','/camisa2/camisa1.png','/camisa2/camisa2.png'] }],
@@ -355,7 +369,7 @@ export const Products: ProductTypeProps[] = [
     name: 'Camisa SB-Summer Nike',
     category: 'Casual',
     sizes: ['P', 'M', 'G'],
-   
+    colors:['amber'],
     price: 189.9,
     img: [{ colorImg: 'amber',  url: ['/camisa3/camisa.png','/camisa3/camisa1.png','/camisa3/camisa2.png'] }],
     featured: true
@@ -366,7 +380,7 @@ export const Products: ProductTypeProps[] = [
     category: 'Futebol',
     sizes: ['P', 'M', 'G', 'XX'],
     price: 499.99,
-   
+    colors:['red'],
     img: [{ colorImg: 'red',url: ['/camisa4/camisa.png','/camisa4/camisa1.png','/camisa4/camisa2.png','/camisa4/camisa3.png','/camisa4/camisa4.png','/camisa4/camisa5.png'] }],
     featured: true
   }
@@ -379,13 +393,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Adidas runner',
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-   
     price: 299.9,
     img: [
-      { colorImg: 'black', url: ['/adidas/adidas.png','/adidas/adidas1.png','/adidas/adidas2.png','/adidas/adidas3.png'] },
-      // { colorImg: 'amber', url: ['/adidas.png'] },
-      // { colorImg: 'blue', url: ['/adidas.png'] }
+      { colorImg: 'black', url: ['/adidas/adidas.png','/adidas/adidas1.png','/adidas/adidas2.png','/adidas/adidas3.png'] }
     ],
+    colors: ['black', 'amber', 'blue'],
     featured: true
   },
   {
@@ -393,9 +405,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Sapa tênis kesis',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40],
-
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/sapatenis1/sapatenis.png'] }],
+    img: [
+      { colorImg: 'slate', url: ['/sapatenis1/sapatenis.png'] }
+    ],
+    colors: ['slate'],
     featured: true
   },
   {
@@ -403,12 +417,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Nike MD Runner',
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-
     price: 590.99,
     img: [
-      { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] },
-      // { colorImg: 'white', url: ['/nike1.png'] }
+      { colorImg: 'black', url: ['/nike/nike.png','/nike/nike1.png','/nike/nike2.png','/nike/nike3.png','/nike/nike4.png'] }
     ],
+    colors: ['black', 'white'],
     featured: true
   },
   {
@@ -416,12 +429,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Sapa tênis casual',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-   
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/nike2/nike.png'] },
-      // { colorImg: 'gray', url: ['/nike3.png'] }
+      { colorImg: 'brown', url: ['/nike2/nike.png'] }
     ],
+    colors: ['brown', 'gray'],
     featured: true
   },
   {
@@ -429,25 +441,23 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Sapa tênis casual',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-  
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/nike3/nike.png'] },
-      // { colorImg: 'gray', url: ['/nike3.png'] }
+      { colorImg: 'brown', url: ['/nike3/nike.png'] }
     ],
+    colors: ['brown', 'gray'],
     featured: true
   },
   {
     id: 6,
     name: 'Nike Shox',
-    category: 'casual',
+    category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
- 
     price: 999.99,
     img: [
-      { colorImg: 'red', url: ['/nike4/nike.png'] },
-      // { colorImg: 'silver', url: ['/nikeShox.png'] }
+      { colorImg: 'red', url: ['/nike4/nike.png'] }
     ],
+    colors: ['red', 'silver'],
     featured: true
   },
   {
@@ -455,9 +465,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
     name: 'Sapa tênis kesis',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-   
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/nike5/nike.png'] }],
+    img: [
+      { colorImg: 'slate', url: ['/nike5/nike.png'] }
+    ],
+    colors: ['slate'],
     featured: true
   },
   {
@@ -467,9 +479,9 @@ export const ProductsFeatured: ProductTypeProps[] = [
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
     img: [
-      { colorImg: 'brown', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] },
-      // { colorImg: 'gray', url: ['/sapatenis2.png'] }
+      { colorImg: 'brown', url: ['/sapatenis2/sapatenis.png','/sapatenis2/sapatenis1.png','/sapatenis2/sapatenis2.png','/sapatenis2/sapatenis3.png','/sapatenis2/sapatenis4.png'] }
     ],
+    colors: ['brown', 'gray'],
     featured: true
   }
 ];
@@ -482,7 +494,13 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Casual',
     sizes: ['P'],
     price: 299.9,
-    img: [{ colorImg: 'black', url: ['/bone/bone.png'] }],
+    colors: ['black'],
+    img: [
+      {
+        colorImg: 'black',
+        url: ['/bone/bone.png']
+      }
+    ],
     featured: true
   },
   {
@@ -491,7 +509,13 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/nike5/nike.png'] }],
+    colors: ['slate'],
+    img: [
+      {
+        colorImg: 'slate',
+        url: ['/nike5/nike.png']
+      }
+    ],
     featured: true
   },
   {
@@ -500,9 +524,16 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 590.99,
+    colors: ['black', 'white'],
     img: [
-      { colorImg: 'black', url: ['/camisa1/camisa.png'] },
-      { colorImg: 'white', url: ['/camisadetime.png'] }
+      {
+        colorImg: 'black',
+        url: ['/camisa1/camisa.png']
+      },
+      {
+        colorImg: 'white',
+        url: ['/camisadetime.png']
+      }
     ],
     featured: true
   },
@@ -511,12 +542,13 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     name: 'Adidas runner',
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
- 
     price: 299.9,
+    colors: ['black'],
     img: [
-      { colorImg: 'black', url: ['/feminina1.png'] },
-      // { colorImg: 'amber', url: ['/feminina1.png'] },
-      // { colorImg: 'blue', url: ['/feminina1.png'] }
+      {
+        colorImg: 'black',
+        url: ['/feminina1.png']
+      }
     ],
     featured: true
   },
@@ -525,11 +557,17 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     name: 'Sapa tênis casual',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-
     price: 180.99,
+    colors: ['brown', 'gray'],
     img: [
-      { colorImg: 'brown', url: ['/meia1.png'] },
-      { colorImg: 'gray', url: ['/meia1.png'] }
+      {
+        colorImg: 'brown',
+        url: ['/meia1.png']
+      },
+      {
+        colorImg: 'gray',
+        url: ['/meia1.png']
+      }
     ],
     featured: true
   },
@@ -539,9 +577,12 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Treino',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 590.99,
+    colors: ['black'],
     img: [
-      { colorImg: 'black', url: ['/camisa2/camisa.png'] },
-      // { colorImg: 'white', url: ['/camisa1.png'] }
+      {
+        colorImg: 'black',
+        url: ['/camisa2/camisa.png']
+      }
     ],
     featured: true
   },
@@ -550,9 +591,14 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     name: 'Sapa tênis kesis',
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
-
     price: 189.9,
-    img: [{ colorImg: 'slate', url: ['/camisa3/camisa.png'] }],
+    colors: ['slate'],
+    img: [
+      {
+        colorImg: 'slate',
+        url: ['/camisa3/camisa.png']
+      }
+    ],
     featured: true
   },
   {
@@ -561,9 +607,12 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     category: 'Casual',
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
+    colors: ['brown'],
     img: [
-      { colorImg: 'brown', url: ['/camisa4/camisa.png'] },
-      // { colorImg: 'gray', url: ['/camisa3.png'] }
+      {
+        colorImg: 'brown',
+        url: ['/camisa4/camisa.png']
+      }
     ],
     featured: true
   }
