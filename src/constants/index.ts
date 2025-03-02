@@ -593,9 +593,10 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
+    colors: ["black"],
     img: [
       {
-        colorImg: "brown",
+        colorImg: "black",
         url: [
           "/sapatenis2/sapatenis.png",
           "/sapatenis2/sapatenis1.png",
@@ -605,7 +606,6 @@ export const ProductsFeatured: ProductTypeProps[] = [
         ],
       },
     ],
-    colors: ["brown", "gray"],
     featured: true,
   },
 ];
