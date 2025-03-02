@@ -216,10 +216,10 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "slate",
         url: [
-          "/sapatenis1/sapatenis.png",
-          "/sapatenis1/sapatenis1.png",
-          "/sapatenis1/sapatenis2.png",
-          "/sapatenis1/sapatenis3.png",
+          "/sapatenis/sapatenis.png",
+          "/sapatenis/sapatenis1.png",
+          "/sapatenis/sapatenis2.png",
+          "/sapatenis/sapatenis3.png",
         ],
       },
     ],
@@ -522,7 +522,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40],
     price: 189.9,
-    img: [{ colorImg: "slate", url: ["/sapatenis1/sapatenis.png"] }],
+    img: [{ colorImg: "slate", url: ["/sapatenis/sapatenis.png"] }],
     colors: ["slate"],
     featured: true,
   },
@@ -653,10 +653,10 @@ export const ProductsFeatured2: ProductTypeProps[] = [
         colorImg: "black",
         url: ["/camisa1/camisa.png"],
       },
-      {
-        colorImg: "white",
-        url: ["/camisadetime.png"],
-      },
+      // {
+      //   colorImg: "white",
+      //   url: ["/camisadetime.png"],
+      // },
     ],
     featured: true,
   },
@@ -687,10 +687,10 @@ export const ProductsFeatured2: ProductTypeProps[] = [
         colorImg: "brown",
         url: ["/meia1.png"],
       },
-      {
-        colorImg: "gray",
-        url: ["/meia1.png"],
-      },
+      // {
+      //   colorImg: "gray",
+      //   url: ["/meia1.png"],
+      // },
     ],
     featured: true,
   },
@@ -754,18 +754,18 @@ export type SingleProductTypeProps = {
 export const RecomendedProducts = [
   {
     id: 1,
-    img: "/adidas/adidas.png",
+    img: "/adidas/adidas.png", // Corresponde ao primeiro produto
   },
   {
-    id: 2,
-    img: "/sapatenis1/sapatenis.png",
+    id: 9,
+    img: "/bone/bone.png", // Boné Nike
   },
   {
-    id: 3,
-    img: "/nike/nike.png",
+    id: 11,
+    img: "/camisa1/camisa.png", // Camisa Corinthians
   },
   {
-    id: 4,
-    img: "/nike2/nike.png",
+    id: 16,
+    img: "/camisa4/camisa.png", // Camisa Barcelona
   },
 ];
