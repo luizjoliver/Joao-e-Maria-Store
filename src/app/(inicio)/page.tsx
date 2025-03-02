@@ -58,11 +58,10 @@ export default function Home() {
               <Link href={"https://www.instagram.com/_joaoemariastore/"} target="_blank">
                 <FaInstagram className="text-2xl" />
               </Link>
-              <Link href={"https://api.whatsapp.com/send/?phone=61984243436&text=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!&type=phone_number&app_absent=0&source_url=UrlJoaoEMaria&context=UrlJoaoEMaria&icebreaker=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!"}
-                target="_blank">
+              <Link href={"https://api.whatsapp.com/send/?phone=61984243436&text=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!&type=phone_number&app_absent=0&source_url=UrlJoaoEMaria&context=UrlJoaoEMaria&icebreaker=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!"} target="_blank" >
                 <FaWhatsapp className="text-2xl" />
               </Link>
-              <Link href={"https://www.instagram.com/_joaoemariastore/"} target="_blank">
+              <Link href={"https://m.facebook.com/100093566641385/"} target="_blank">
                 <FaFacebook className="text-2xl" />
               </Link>
             </div>
