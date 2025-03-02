@@ -34,7 +34,7 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {CategoriesCards.map((category) => (
               <Link
-                href={`${category?.categoryName}`}
+                href={`/ofertas`}
                 key={category?.id}
                 className="relative aspect-square overflow-hidden  hover:scale-105 transition-all duration-300"
               >
@@ -51,41 +51,42 @@ export default function Home() {
 
 
       <footer className="bg-black w-full py-10 text-white">
-
-        <div className="flex flex-col items-center gap-2 text-center">
-          <h2 className="text-lg font-semibold">Siga-nos</h2>
-          <div className="flex space-x-4">
-            <Link href={""}>
-              <FaInstagram />
-            </Link>
-            <Link href={""}>
-              <FaWhatsapp />
-            </Link>
-            <Link href={""}>
-              <FaFacebook />
-            </Link>
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-4">
+          <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
+            <h2 className="text-lg font-semibold">Siga-nos</h2>
+            <div className="flex space-x-4 mt-2">
+              <Link href={"https://www.instagram.com/_joaoemariastore/"} target="_blank">
+                <FaInstagram className="text-2xl" />
+              </Link>
+              <Link href={"https://api.whatsapp.com/send/?phone=61984243436&text=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!&type=phone_number&app_absent=0&source_url=UrlJoaoEMaria&context=UrlJoaoEMaria&icebreaker=Ol%C3%A1%20jo%C3%A3o%20e%20maria%20store%20!"}
+                target="_blank">
+                <FaWhatsapp className="text-2xl" />
+              </Link>
+              <Link href={"https://www.instagram.com/_joaoemariastore/"} target="_blank">
+                <FaFacebook className="text-2xl" />
+              </Link>
+            </div>
           </div>
-        </div>
 
-        <div className="container mx-auto flex flex-wrap justify-around">
-
-          <div className="flex flex-col items-center gap-2 text-center">
+          <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
             <h2 className="text-lg font-semibold">Central de Vendas</h2>
             <p className="text-sm">(61) 99999-9999</p>
             <p className="text-sm">Segunda a Sexta: 9h às 18h</p>
           </div>
 
-
-          <div className="flex flex-col items-center gap-2 text-center">
-            <h2 className="text-lg font-semibold">Formas de Pagamento</h2>
-            <div className="flex space-x-4">
-              {/* <img src="/icons/visa.png" alt="Visa" className="w-10 h-10" />
-              <img src="/icons/mastercard.png" alt="Mastercard" className="w-10 h-10" />
-              <img src="/icons/pix.png" alt="Pix" className="w-10 h-10" />
-              <img src="/icons/amex.png" alt="Amex" className="w-10 h-10" /> */}
-            </div>
-          </div>
+          {/* 
+    <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
+      <h2 className="text-lg font-semibold">Formas de Pagamento</h2>
+      <div className="flex space-x-4 mt-2">
+        <img src="/icons/visa.png" alt="Visa" className="w-10 h-10" />
+        <img src="/icons/mastercard.png" alt="Mastercard" className="w-10 h-10" />
+        <img src="/icons/pix.png" alt="Pix" className="w-10 h-10" />
+        <img src="/icons/amex.png" alt="Amex" className="w-10 h-10" />
+      </div>
+    </div> 
+    */}
         </div>
+
         <div className="mt-6 text-center text-sm text-gray-400">
           © 2024 JoãoMariaSotre. Todos os direitos reservados.
         </div>

@@ -1,6 +1,7 @@
+import { useSessionStore } from "@/app/store"
 import { categoriesMenu } from "@/constants"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import { IoMdClose } from "react-icons/io"
 
@@ -11,9 +12,10 @@ type MenuModalProps = {
 export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
   const [currentCategory, setCurrentCategory] = useState('')
   const [currentSubCategory, setCurrentSubCategory] = useState<number | null>(null)
-
-  const isLoggedIn = false // Simular autenticação
-  const userName = "João" // Simular nome do usuário
+  
+  const session = useSessionStore((state) => state.session)
+  const logOut = useSessionStore((state) => state.logOut)
+  const userName = useSessionStore((state) => state.user?.email)?.split("@")[0] // Simular nome do usuário
 
   function onClickCloseMenuModal() {
     setIsMenuOpen(false)
@@ -28,8 +30,18 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
     setCurrentSubCategory((prev) => prev === subCategoryId ? null : subCategoryId)
   }
 
+  useEffect(() => {
+    // Bloqueia o scroll da página quando o modal abre
+    document.body.style.overflow = 'hidden'
+    
+    return () => {
+      // Libera o scroll quando o modal fecha
+      document.body.style.overflow = 'auto'
+    }
+  }, [])
+
   return createPortal(
-    <div className="fixed inset-0 z-50">
+    <div className="h-dvh fixed inset-0 z-50">
       <div 
         className="absolute inset-0 bg-black/50 " 
         onClick={onClickCloseMenuModal}
@@ -49,13 +61,13 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
 
         {/* Seção de Status do Usuário */}
         <div className="flex flex-col items-center py-6 bg-amber-900 text-white">
-          {isLoggedIn ? (
+          {session ? (
             <>
               <div className="w-16 h-16 bg-white rounded-full mb-2"></div> {/* Placeholder para Avatar */}
               <p className="text-lg font-semibold">{userName}</p>
               <div className="flex gap-4 mt-2">
-                <Link href="/perfil" className="text-sm hover:underline">Perfil</Link>
-                <button className="text-sm hover:underline">Sair</button>
+                <Link href="/profile" className="text-sm hover:underline" onClick={onClickCloseMenuModal}>Perfil</Link>
+                <button className="text-sm hover:underline" onClick={logOut} >Sair</button>
               </div>
             </>
           ) : (

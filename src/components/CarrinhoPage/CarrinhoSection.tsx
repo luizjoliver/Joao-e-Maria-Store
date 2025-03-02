@@ -102,7 +102,7 @@ export default function CarrinhoSection() {
           <AlertDialog>
             <AlertDialogTrigger className={`bg-black text-white rounded-lg p-2 hover:bg-opacity-80 ${isAnyProduct ? '' : 'disabled:cursor-not-allowed'} `}
               disabled={!isAnyProduct} 
-              onClick={FinishBuy}>Open</AlertDialogTrigger>
+              onClick={FinishBuy}>Comprar</AlertDialogTrigger>
             <AlertDialogContent className=''>
               <AlertDialogHeader className='relative'>
               <AlertDialogAction className='absolute top-0 right-0 size-7 '><IoIosClose /></AlertDialogAction>

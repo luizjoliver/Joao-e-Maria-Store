@@ -28,8 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="JM Store" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
         <NavBarComponent />
         {children}

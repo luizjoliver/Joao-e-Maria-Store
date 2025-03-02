@@ -115,3 +115,15 @@ html, body {
     @apply bg-background text-foreground; 
   } 
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@layer utilities {
+  .h-screen {
+    height: 100dvh;
+  }
+}

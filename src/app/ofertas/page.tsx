@@ -1,5 +1,5 @@
 "use client"
-// OfertasPage.tsx
+
 import React, { useState } from 'react';
 import Footer from '@/components/landPage/Footer';
 import PaginationProducts from '@/components/PaginationProducts';
