@@ -759,7 +759,7 @@ export const RecomendedProducts = [
   },
   {
     id: 9,
-    img: "/bone/bone.png", // Boné Nike
+    img: "/bone/bonezero.png", // Boné Nike
   },
   {
     id: 11,
