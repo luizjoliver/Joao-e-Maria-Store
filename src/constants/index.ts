@@ -537,7 +537,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/nike/nike.png",
+          "/nike/nikezero.png",
           // "/nike/nikeum.png",
           // "/nike/nikedois.png",
           // "/nike/niketres.png",
@@ -622,7 +622,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "black",
-        url: ["/bone/bone.png"],
+        url: ["/bone/bonezero.png"],
       },
     ],
     featured: true,
