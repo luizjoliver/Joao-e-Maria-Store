@@ -237,7 +237,7 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/nike/nike.png",
+          "/nike/nikezero.png",
           "/nike/nikeum.png",
           "/nike/nikedois.png",
           "/nike/niketres.png",
@@ -363,7 +363,7 @@ export const Products: ProductTypeProps[] = [
     sizes: ["P"],
     price: 299.9,
     img: [
-      { colorImg: "black", url: ["/bone/bone.png", "/bone/boneum.png"] },
+      { colorImg: "black", url: ["/bone/bonezero.png", "/bone/boneum.png"] },
       // { colorImg: 'white', url: ['/bone1.png'] },
       // { colorImg: 'red', url: ['/bone1.png'] }
     ],
