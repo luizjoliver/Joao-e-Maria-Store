@@ -197,9 +197,10 @@ export const Products: ProductTypeProps[] = [
         colorImg: "black",
         url: [
           "/adidas/adidas.png",
-          "/adidas/adidas1.png",
-          "/adidas/adidas2.png",
-          "/adidas/adidas3.png",
+          "/adidas/adidasum.png",
+          "/adidas/adidasdois.png",
+          "/adidas/adidastres.png",
+          "/adidas/adidasquatro.png"
         ],
       },
     ],
@@ -217,9 +218,9 @@ export const Products: ProductTypeProps[] = [
         colorImg: "slate",
         url: [
           "/sapatenis/sapatenis.png",
-          "/sapatenis/sapatenis1.png",
-          "/sapatenis/sapatenis2.png",
-          "/sapatenis/sapatenis3.png",
+          "/sapatenis/sapatenisum.png",
+          "/sapatenis/sapatenisdois.png",
+          "/sapatenis/sapatenistres.png",
         ],
       },
     ],
@@ -237,10 +238,10 @@ export const Products: ProductTypeProps[] = [
         colorImg: "black",
         url: [
           "/nike/nike.png",
-          "/nike/nike1.png",
-          "/nike/nike2.png",
-          "/nike/nike3.png",
-          "/nike/nike4.png",
+          "/nike/nikeum.png",
+          "/nike/nikedois.png",
+          "/nike/niketres.png",
+          "/nike/nikequatro.png",
         ],
       },
       //  { colorImg: 'blue', url: ['/nike1.png'] },
@@ -259,7 +260,7 @@ export const Products: ProductTypeProps[] = [
     img: [
       {
         colorImg: "pink",
-        url: ["/nike2/nike.png", "/nike2/nike1.png", "/nike2/nike2.png"],
+        url: ["/nikedois/nike.png", "/nikedois/nikeum.png", "/nikedois/nikedois.png"],
       },
     ],
     featured: true,
@@ -278,10 +279,10 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "white",
         url: [
-          "/nike3/nike.png",
-          "/nike3/nike1.png",
-          "/nike3/nike2.png",
-          "/nike3/nike3.png",
+          "/niketres/nike.png",
+          "/niketres/nikeum.png",
+          "/niketres/nikedois.png",
+          "/niketres/niketres.png",
         ],
       },
       // { colorImg: 'blue', url: ['/airmax.png'] },
@@ -301,12 +302,12 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/nike4/nike.png",
-          "/nike4/nike1.png",
-          "/nike4/nike2.png",
-          "/nike4/nike3.png",
-          "/nike4/nike4.png",
-          "/nike4/nike5.png",
+          "/nikequatro/nike.png",
+          "/nikequatro/nikeum.png",
+          "/nikequatro/nikedois.png",
+          "/nikequatro/niketres.png",
+          "/nikequatro/nikequatro.png",
+          "/nikequatro/nikefive.png",
         ],
       },
       // { colorImg: 'yellow', url: ['/nikeShox.png'] }
@@ -324,11 +325,11 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/nike5/nike.png",
-          "/nike5/nike1.png",
-          "/nike5/nike2.png",
-          "/nike5/nike3.png",
-          "/nike5/nike4.png",
+          "/nikefive/nike.png",
+          "/nikefive/nikeum.png",
+          "/nikefive/nikedois.png",
+          "/nikefive/niketres.png",
+          "/nikefive/nikequatro.png",
         ],
       },
     ],
@@ -345,11 +346,11 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/sapatenis2/sapatenis.png",
-          "/sapatenis2/sapatenis1.png",
-          "/sapatenis2/sapatenis2.png",
-          "/sapatenis2/sapatenis3.png",
-          "/sapatenis2/sapatenis4.png",
+          "/sapatenisdois/sapatenis.png",
+          "/sapatenisdois/sapatenisum.png",
+          "/sapatenisdois/sapatenisdois.png",
+          "/sapatenisdois/sapatenistres.png",
+          "/sapatenisdois/sapatenisquatro.png",
         ],
       },
     ],
@@ -362,7 +363,7 @@ export const Products: ProductTypeProps[] = [
     sizes: ["P"],
     price: 299.9,
     img: [
-      { colorImg: "black", url: ["/bone/bone.png", "/bone/bone1.png"] },
+      { colorImg: "black", url: ["/bone/bone.png", "/bone/boneum.png"] },
       // { colorImg: 'white', url: ['/bone1.png'] },
       // { colorImg: 'red', url: ['/bone1.png'] }
     ],
@@ -379,11 +380,11 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "pink",
         url: [
-          "/nike5/nike.png",
-          "/nike5/nike1.png",
-          "/nike5/nike2.png",
-          "/nike5/nike3.png",
-          "/nike5/nike4.png",
+          "/nikefive/nike.png",
+          "/nikefive/nikeum.png",
+          "/nikefive/nikedois.png",
+          "/nikefive/niketres.png",
+          "/nikefive/nikequatro.png",
         ],
       },
       // { colorImg: 'red', url: ['/feminina.png'] },
@@ -402,10 +403,10 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/camisa1/camisa.png",
-          "/camisa1/camisa1.png",
-          "/camisa1/camisa2.png",
-          "/camisa1/camisa3.png",
+          "/camisaum/camisa.png",
+          "/camisaum/camisaum.png",
+          "/camisaum/camisadois.png",
+          "/camisaum/camisatres.png",
         ],
       },
     ],
@@ -444,9 +445,9 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/camisa2/camisa.png",
-          "/camisa2/camisa1.png",
-          "/camisa2/camisa2.png",
+          "/camisadois/camisa.png",
+          "/camisadois/camisaum.png",
+          "/camisadois/camisadois.png",
         ],
       },
     ],
@@ -463,9 +464,9 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "amber",
         url: [
-          "/camisa3/camisa.png",
-          "/camisa3/camisa1.png",
-          "/camisa3/camisa2.png",
+          "/camisatres/camisa.png",
+          "/camisatres/camisaum.png",
+          "/camisatres/camisadois.png",
         ],
       },
     ],
@@ -482,12 +483,12 @@ export const Products: ProductTypeProps[] = [
       {
         colorImg: "red",
         url: [
-          "/camisa4/camisa.png",
-          "/camisa4/camisa1.png",
-          "/camisa4/camisa2.png",
-          "/camisa4/camisa3.png",
-          "/camisa4/camisa4.png",
-          "/camisa4/camisa5.png",
+          "/camisaquatro/camisa.png",
+          "/camisaquatro/camisaum.png",
+          "/camisaquatro/camisadois.png",
+          "/camisaquatro/camisatres.png",
+          "/camisaquatro/camisaquatro.png",
+          "/camisaquatro/camisacinco.png",
         ],
       },
     ],
@@ -507,9 +508,9 @@ export const ProductsFeatured: ProductTypeProps[] = [
         colorImg: "black",
         url: [
           "/adidas/adidas.png",
-          "/adidas/adidas1.png",
-          "/adidas/adidas2.png",
-          "/adidas/adidas3.png",
+          // "/adidas/adidasum.png",
+          // "/adidas/adidasdois.png",
+          // "/adidas/adidastres.png",
         ],
       },
     ],
@@ -537,10 +538,10 @@ export const ProductsFeatured: ProductTypeProps[] = [
         colorImg: "black",
         url: [
           "/nike/nike.png",
-          "/nike/nike1.png",
-          "/nike/nike2.png",
-          "/nike/nike3.png",
-          "/nike/nike4.png",
+          // "/nike/nikeum.png",
+          // "/nike/nikedois.png",
+          // "/nike/niketres.png",
+          // "/nike/nikequatro.png",
         ],
       },
     ],
@@ -553,7 +554,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
-    img: [{ colorImg: "brown", url: ["/nike2/nike.png"] }],
+    img: [{ colorImg: "brown", url: ["/nikedois/nike.png"] }],
     colors: ["brown", "gray"],
     featured: true,
   },
@@ -563,7 +564,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
-    img: [{ colorImg: "brown", url: ["/nike3/nike.png"] }],
+    img: [{ colorImg: "brown", url: ["/niketres/nike.png"] }],
     colors: ["brown", "gray"],
     featured: true,
   },
@@ -573,7 +574,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 999.99,
-    img: [{ colorImg: "red", url: ["/nike4/nike.png"] }],
+    img: [{ colorImg: "red", url: ["/nikequatro/nike.png"] }],
     colors: ["red", "silver"],
     featured: true,
   },
@@ -583,7 +584,7 @@ export const ProductsFeatured: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
-    img: [{ colorImg: "slate", url: ["/nike5/nike.png"] }],
+    img: [{ colorImg: "slate", url: ["/nikefive/nike.png"] }],
     colors: ["slate"],
     featured: true,
   },
@@ -598,11 +599,11 @@ export const ProductsFeatured: ProductTypeProps[] = [
       {
         colorImg: "black",
         url: [
-          "/sapatenis2/sapatenis.png",
-          "/sapatenis2/sapatenis1.png",
-          "/sapatenis2/sapatenis2.png",
-          "/sapatenis2/sapatenis3.png",
-          "/sapatenis2/sapatenis4.png",
+          "/sapatenisdois/sapatenis.png",
+          // "/sapatenis2/sapatenis1.png",
+          // "/sapatenis2/sapatenis2.png",
+          // "/sapatenis2/sapatenis3.png",
+          // "/sapatenis2/sapatenis4.png",
         ],
       },
     ],
@@ -636,7 +637,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "slate",
-        url: ["/nike5/nike.png"],
+        url: ["/nikefive/nike.png"],
       },
     ],
     featured: true,
@@ -651,7 +652,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "black",
-        url: ["/camisa1/camisa.png"],
+        url: ["/camisaum/camisa.png"],
       },
       // {
       //   colorImg: "white",
@@ -704,7 +705,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "black",
-        url: ["/camisa2/camisa.png"],
+        url: ["/camisadois/camisa.png"],
       },
     ],
     featured: true,
@@ -719,7 +720,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "slate",
-        url: ["/camisa3/camisa.png"],
+        url: ["/camisatres/camisa.png"],
       },
     ],
     featured: true,
@@ -734,7 +735,7 @@ export const ProductsFeatured2: ProductTypeProps[] = [
     img: [
       {
         colorImg: "brown",
-        url: ["/camisa4/camisa.png"],
+        url: ["/camisaquatro/camisa.png"],
       },
     ],
     featured: true,
@@ -762,10 +763,10 @@ export const RecomendedProducts = [
   },
   {
     id: 11,
-    img: "/camisa1/camisa.png", // Camisa Corinthians
+    img: "/camisaum/camisa.png", // Camisa Corinthians
   },
   {
     id: 16,
-    img: "/camisa4/camisa.png", // Camisa Barcelona
+    img: "/camisaquatro/camisa.png", // Camisa Barcelona
   },
 ];
