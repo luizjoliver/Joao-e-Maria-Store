@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import { IoMdClose } from "react-icons/io"
+import { toast } from "sonner"
 
 type MenuModalProps = {
   setIsMenuOpen: (value: boolean) => void;
@@ -14,8 +15,18 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
   const [currentSubCategory, setCurrentSubCategory] = useState<number | null>(null)
   
   const session = useSessionStore((state) => state.session)
-  const logOut = useSessionStore((state) => state.logOut)
   const userName = useSessionStore((state) => state.user?.email)?.split("@")[0] // Simular nome do usuário
+  
+  function handleLogOut(){
+    const logOut = useSessionStore.getState().logOut
+
+    toast.success('Sessão encerrada',{
+      style:{ backgroundColor: '#dc2626', color: 'white' }
+    } )
+    
+    logOut()
+
+  }
 
   function onClickCloseMenuModal() {
     setIsMenuOpen(false)
@@ -67,7 +78,7 @@ export default function MenuModal({ setIsMenuOpen }: MenuModalProps) {
               <p className="text-lg font-semibold">{userName}</p>
               <div className="flex gap-4 mt-2">
                 <Link href="/profile" className="text-sm hover:underline" onClick={onClickCloseMenuModal}>Perfil</Link>
-                <button className="text-sm hover:underline" onClick={logOut} >Sair</button>
+                <button className="text-sm hover:underline" onClick={handleLogOut} >Sair</button>
               </div>
             </>
           ) : (

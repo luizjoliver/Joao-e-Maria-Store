@@ -3,8 +3,13 @@
 import EntranceComponent from "@/components/LoginRegisterPages/EntranceComponent";
 import { useSessionStore } from "../store";
 import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
+
 
 export default function LoginPage() {
+  const router = useRouter()
+
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
   
@@ -19,6 +24,11 @@ export default function LoginPage() {
   
     console.log({ email, password });
     useSessionStore.getState().logIn({ email, password });
+
+    router.push("/profile")
+    toast.success("Login efetuado com sucesso!",{
+      style: { backgroundColor: '#22c55e', color: 'white' } 
+    })
   }
 
   return (

@@ -148,9 +148,9 @@ export const categoriesMenu = [
         id: 13,
         subtitle: "Camisa de time",
         items: [
-          { name: "Futebol", link: "/masculino/camisa/futebol" },
-          { name: "Basquete", link: "/masculino/camisa/basquete" },
-          { name: "Vôlei", link: "/masculino/camisa/volei" },
+          { name: "Futebol", link: "/ofertas" },
+          { name: "Basquete", link: "/ofertas" },
+          { name: "Vôlei", link: "/ofertas" },
         ],
       },
       {
