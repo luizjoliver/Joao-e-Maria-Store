@@ -53,7 +53,8 @@ export default function CarrinhoItens({ cartItems, setCartItems }: CarrinhoItems
           <div className='h-full flex lg:w-2/3 w-full flex-col lg:flex-row items-center justify-center gap-4 lg:gap-0'>
             <div className='h-full lg:w-1/2 w-full flex flex-col items-center justify-center lg:flex-row gap-2'>
               <div className='h-[45dvh] sm:h-[70dvh] lg:h-full w-full sm:full lg:w-1/5 flex items-center justify-center'>
-                <Image src={item.img[0].url[0]} className='w-full sm:w-[90%] h-full lg:h-16' width={827} height={560} alt={item.name} />
+                <Image src={item.img[0].url[0]} className='w-full sm:w-[90%] h-full lg:h-16' width={827} height={560} alt={item.name} 
+                priority/>
               </div>
 
               <div className='h-full lg:w-4/5 w-full flex flex-col flex-1 text-base lg:text-sm'>

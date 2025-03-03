@@ -50,6 +50,7 @@ export default function ProductColorsComponent({ card, colors,selectedSize,selec
             <div className="w-full h-full flex items-center justify-center gap-2">
               {colors?.map((color) => (
                 <Link href={`?imgIndex=${selectedImgIndex}&color=${color}&size=${selectedSize}`} key={color} className={`${colorMap[color] } ${selectedColor === color && 'ring-1 ring-blue-500'} size-4 rounded-full cursor-pointer hover:ring-1 hover:ring-blue-500`}
+                scroll={false}
                 ></Link>
               ))}
             </div>

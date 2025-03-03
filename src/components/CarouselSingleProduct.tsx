@@ -34,6 +34,7 @@ export default function CarouselSingleProduct({ productId, selectedSize, selecte
                     alt={`product ${productId}`}
                     className='object-fill w-full h-full'
                     priority
+                    
                 />
             </div>
 
@@ -44,6 +45,7 @@ export default function CarouselSingleProduct({ productId, selectedSize, selecte
                         href={`?imgIndex=${subIndex}&color=${selectedImageGroup.colorImg}&size=${selectedSize}`}
                         key={`${selectedImageGroup.colorImg}-${subIndex}`}
                         className="bg-[#DBDBDB] w-[calc(25%-12px)] h-full flex-shrink-0 cursor-pointer flex items-center justify-center"
+                        
                     >
                         <Image
                             width={930}
@@ -51,6 +53,7 @@ export default function CarouselSingleProduct({ productId, selectedSize, selecte
                             src={imageUrl}
                             alt={`Thumbnail - ${selectedImageGroup.colorImg}`}
                             className="object-fill w-full h-full"
+                            priority
                         />
                     </Link>
                 ))}

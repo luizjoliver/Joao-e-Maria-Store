@@ -7,6 +7,7 @@ export default function PictureSection({pictureUrl}:{pictureUrl:string}) {
     <div className=" h-full w-full aspect-auto  relative ">
              <Image src={pictureUrl} alt="foto da categoria"  fill
              className="w-full "
+             priority
              /> 
     </div>
   )

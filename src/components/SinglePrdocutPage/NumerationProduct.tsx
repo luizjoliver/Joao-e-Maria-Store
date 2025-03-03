@@ -21,6 +21,7 @@ export default function ProductNumerationsComponent({ numerations, selectedSize 
              className={`bg-[#F7F7F7] rounded-md min-h-10 flex items-center justify-center 
                hover:ring-1 hover:ring-black cursor-pointer px-4 py-2 min-w-[80px]
               ${String(selectedSize) === String(size) ? 'ring-1 ring-black' : ''}`}
+              scroll={false}
             
            >
              <span>{size}</span>

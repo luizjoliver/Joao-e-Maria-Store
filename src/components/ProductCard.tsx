@@ -32,8 +32,9 @@ export default function ProductCard({product} : FeaturedProductCardProps ) {
                 <Image
                 src={product.img[0].url[0]}
                 fill
-                className=''
+                className="object-cover"
                 alt=''
+                priority
               />
 
           </Link>
@@ -44,8 +45,9 @@ export default function ProductCard({product} : FeaturedProductCardProps ) {
                 <Image
                 src={product.img[0].url[0]}
                 fill
-                className=''
+                className="object-cover"
                 alt=''
+                priority
               />
 
           </div>

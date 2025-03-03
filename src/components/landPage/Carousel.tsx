@@ -71,13 +71,14 @@ export default function Carousel({ products, homePage }: CarouselProps) {
   }, [homePage]);
 
 
+
   return (
 
 
     <div className=' w-full h-full  flex  items-center gap-2 justify-center  '>
 
       <div className=' h-16 w-[15%] sm:w-[5%] flex items-center justify-center '>
-        <IoIosArrowBack className='size-1/2 cursor-pointer  '
+        <IoIosArrowBack className='size-1/2 cursor-pointer transition-opacity hover:opacity-60'
           onClick={handlePrevIndex} />
       </div>
 
@@ -95,7 +96,7 @@ export default function Carousel({ products, homePage }: CarouselProps) {
         }
       </div>
       <div  className='  h-16 w-[15%] sm:w-[5%] flex items-center justify-center'>
-        <IoIosArrowForward className='size-1/2 cursor-pointer '
+        <IoIosArrowForward className='size-1/2 cursor-pointer transition-opacity hover:opacity-60'
           onClick={handleNextIndex} />
       </div>
 
