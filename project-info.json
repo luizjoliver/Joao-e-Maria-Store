@@ -3,5 +3,10 @@
     "description": "A JM Store é uma loja online que permite aos clientes realizarem compras de forma totalmente virtual. Nosso sistema funciona como um PWA (Progressive Web App), garantindo uma experiência fluida tanto em computadores quanto em dispositivos móveis, como smartphones Android e iPhones.",
     "techStack": ["React", "Next", "TypeScript", "Node", "Tailwind", "Zustand"],
     "services": ["PWA", "E-commerce"],
-    "about": "A JM Store surgiu com a ideia de criar uma versão online da loja do meu padrasto, possibilitando a venda de produtos pela internet, além da loja física, que já está em funcionamento há mais de 10 anos."
+    "about": "A JM Store surgiu com a ideia de criar uma versão online da loja do meu padrasto, possibilitando a venda de produtos pela internet, além da loja física, que já está em funcionamento há mais de 10 anos.",
+    "imgs":{
+        "banner":"https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/banner/banner.png",
+        "desktopVersion":["https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop1.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop2.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop3.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop4.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop5.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/desktopVersion/desktop6.png"],
+        "mobileVersion":["https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/mobileVersion/mobile.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/mobileVersion/mobile1.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/mobileVersion/mobile2.png","https://raw.githubusercontent.com/luizjoliver/Joao-e-Maria-Store/main/public/portfolio/mobileVersion/mobile3.png"]
+    }
 }
