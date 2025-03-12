@@ -208,7 +208,7 @@ export const Products: ProductTypeProps[] = [
   },
   {
     id: 2,
-    name: "Sapa tênis kesis",
+    name: "Sapa tênis hilfiger",
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40],
     colors: ["slate"],
@@ -320,10 +320,10 @@ export const Products: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
-    colors: ["black"],
+    colors: ["pink"],
     img: [
       {
-        colorImg: "black",
+        colorImg: "pink",
         url: [
           "/nikefive/nike.png",
           "/nikefive/nikeum.png",
@@ -341,10 +341,10 @@ export const Products: ProductTypeProps[] = [
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 180.99,
-    colors: ["black"],
+    colors: ["amber"],
     img: [
       {
-        colorImg: "black",
+        colorImg: "amber",
         url: [
           "/sapatenisdois/sapatenis.png",
           "/sapatenisdois/sapatenisum.png",
