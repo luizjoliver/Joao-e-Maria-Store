@@ -372,25 +372,25 @@ export const Products: ProductTypeProps[] = [
   },
   {
     id: 10,
-    name: "Sapa tênis 3sx femme",
+    name: "Tênis Nike Court Vision Low Next Nature",
     category: "Casual",
     sizes: [34, 35, 36, 37, 38, 39, 40, 41.5, 42, 43],
     price: 189.9,
     img: [
       {
-        colorImg: "pink",
+        colorImg: "green",
         url: [
-          "/nikefive/nike.png",
-          "/nikefive/nikeum.png",
-          "/nikefive/nikedois.png",
-          "/nikefive/niketres.png",
-          "/nikefive/nikequatro.png",
+          "/nikesix/nike.png",
+          "/nikesix/nikeum.png",
+          "/nikesix/nikedois.png",
+          "/nikesix/niketres.png",
+  
         ],
       },
       // { colorImg: 'red', url: ['/feminina.png'] },
       // { colorImg: 'black', url: ['/feminina.png'] }
     ],
-    colors: ["pink", "red", "black"],
+    colors: ["green", "red", "black"],
     featured: true,
   },
   {
